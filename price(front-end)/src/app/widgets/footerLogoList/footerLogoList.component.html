@@ -1,0 +1,11 @@
+<!-- Slick slider Client logo list -->
+<div class="container">
+	<ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+	    <div ngxSlickItem *ngFor="let slide of logoList" class="slide">
+	    	<a href="javascript:void(0);">
+	          <img src="{{ slide?.logo_path }}" class="img-fluid" alt="client logo" />
+	        </a>
+	    </div>
+	</ngx-slick>
+</div><!-- container closed -->
+

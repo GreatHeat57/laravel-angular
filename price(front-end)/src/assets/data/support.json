@@ -1,0 +1,74 @@
+{
+  "data":{
+    "support_topics":[
+      {
+        "heading":"Popular help topics",
+        "content":[
+          "How do I change my password?",
+          "How do I cancel my account?",
+          "How can I invite more coworkers to my account?",
+          "Can I invite more members?"
+        ]
+      },
+      {
+        "heading":"Billing",
+        "content":[
+          "How can I change my plan?",
+          "The team behind the project?",
+          "What are our values?",
+          "What are the key features?"
+        ]
+      },
+      {
+        "heading":"Projects",
+        "content":[
+          "How to use dashboard?",
+          "How easy can I connect to third party services?",
+          "How secure is my data?",
+          "What are the available plans?"
+        ]
+      }
+    ],
+    "supports":[
+      {
+        "heading":"Can't find what you need?",
+        "content":"Potenti elit lectus augue eget iaculis vitae etiam, ullamcorper etiam bibendum ad feugiat magna accumsan dolor, nibh molestie cras hac ac ad massa",
+        "image_path":"./assets/img/ticket.png",
+        "button_content":"Submit Ticket"
+      },
+      {
+        "heading":"Ask the community",
+        "content":"Potenti elit lectus augue eget iaculis vitae etiam, ullamcorper etiam bibendum ad feugiat magna accumsan dolor, nibh molestie cras hac ac ad massa",
+        "image_path":"./assets/img/community.png",
+        "button_content":"Go To community"
+      }
+    ],
+    "support_questions":[
+      {
+        "question":"Do you have any built-in caching?",
+        "answer":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "collapse_id":"one"
+      },
+      {
+        "question":"Can I add/upgrade my plan at any time?",
+        "answer":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "collapse_id":"two"
+      },
+      {
+        "question":"What access comes with my hosting plan?",
+        "answer":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "collapse_id":"three"
+      },
+      {
+        "question":"Can I add/upgrade my plan at any time?",
+        "answer":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "collapse_id":"four"
+      },
+      {
+        "question":"Do you have any built-in caching?",
+        "answer":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "collapse_id":"five"
+      }
+    ]
+  }
+}

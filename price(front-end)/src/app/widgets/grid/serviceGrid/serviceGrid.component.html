@@ -1,0 +1,13 @@
+<!-- Service grid -->
+<div class="col-sm-12 col-md-4 col-xl-4 m-sm-b" *ngFor="let content of serviceGridContent ? serviceGridContent.slice(0,3):[]">
+   <div class="info-card text-center">
+      <div class="icon-wrap mb-3 {{content?.icon?.color}}">
+        <i class="{{content?.icon?.name}} font-4x"></i>
+      </div>
+      <h5 class="mb-3 info-title">{{content?.title}}</h5>
+      <p class="mb-4 font-small">{{content?.content}}</p>
+      <a href="javascript:void(0)" class="text-uppercase btn {{content?.btnBgClass}} btn-sm">
+         SEE MORE
+      </a> 
+   </div>
+</div>

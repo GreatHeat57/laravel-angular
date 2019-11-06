@@ -1,0 +1,29 @@
+<!-- Send Msg Form -->
+<div class="border-0 border-rad p-4 card-shadow">
+   <div class="mb-4">
+      <h2> Send Us Message </h2>
+   </div>
+   <form [formGroup] = "sendMessageForm" (ngSubmit) = "sendMessage(sendMessageForm.value)">
+      <div class="form-row">
+         <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6 mb-4">
+            <label class="mb-3" for="first-name">First Name</label>
+            <input id="first-name" type="text" class="form-control" placeholder="" formControlName = "first_name" required>
+         </div>
+         <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6 mb-4">
+            <label class="mb-3" for="last-name">Last Name</label>
+            <input id="last-name" type="text" class="form-control" placeholder="" formControlName = "last_name" required>
+         </div>
+      </div>
+      <div class="form-group mb-4">
+         <label class="mb-3" for="email-address">Email</label>
+         <input id="email-address" type="email" class="form-control" placeholder="" formControlName = "email" required>
+      </div>
+      <div class="form-group mb-5">
+         <label class="mb-3" for="message">Messages</label>
+         <textarea id="message" class="form-control" rows="5" placeholder="" formControlName = "textarea" required></textarea>
+      </div>
+      <div class="form-group">
+         <button type="submit" class="btn btn-dark btn-chk-dark inverse">Send Messages</button>
+      </div>
+   </form>
+</div>

@@ -1,0 +1,6 @@
+/*======== Theme Additional Background Color ======*/
+
+@include bg-variant('.bg-black', $gray-900);
+@include bg-variant('.bg-green', $cyan);
+@include bg-variant('.bg-yellow', $yellow);
+@include bg-variant('.bg-base', $gray-300);

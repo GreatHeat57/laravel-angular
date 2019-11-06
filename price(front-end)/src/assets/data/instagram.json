@@ -1,0 +1,31 @@
+{
+   "data":[
+      {
+         "image_path":"assets/img/1-team.jpg"
+      },
+      {
+         "image_path":"assets/img/2-team.jpg"
+      },
+      {
+         "image_path":"assets/img/3-team.jpg"
+      },
+      {
+         "image_path":"assets/img/2-team.jpg"
+      },
+      {
+         "image_path":"assets/img/1-team.jpg"
+      },
+      {
+         "image_path":"assets/img/3-team.jpg"
+      },
+      {
+         "image_path":"assets/img/1-team.jpg"
+      },
+      {
+         "image_path":"assets/img/2-team.jpg"
+      },
+      {
+         "image_path":"assets/img/3-team.jpg"
+      }
+   ]
+}

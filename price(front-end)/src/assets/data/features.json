@@ -1,0 +1,73 @@
+{
+  "data":{
+    "feature_details":{
+      "image_path":"./assets/img/feature-mockup.png",
+      "heading":" Best designs and features you look for your dream project.",
+      "sub_heading":" Designed to develope apps/websites fast and easy with east component structure and elements.",
+      "list":[
+        {"icon":"fa fa-check text-green", "content": "Latest Bootstrap 4X version."},
+        {"icon":"fa fa-check text-green", "content": "Angular latest version ."},
+        {"icon":"fa fa-check text-green", "content": "Code approach is simple"},
+        {"icon":"fa fa-check text-green", "content": "Easy to style and customize "}
+      ]
+    },
+    "features_work":[
+      {
+        "image_path":"./assets/img/feature-icon.png",
+        "heading":"Features",
+        "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "url":""
+      },
+      {
+        "image_path":"./assets/img/dashboard-icon.png",
+        "heading":"Dashboard",
+        "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "url":""
+      },
+      {
+        "image_path":"./assets/img/social-ntwk.png",
+        "heading":"Social Network",
+        "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "url":""
+      },
+      {
+        "image_path":"./assets/img/e-commerce.png",
+        "heading":"E-commerce",
+        "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "url":""
+      },
+      {
+        "image_path":"./assets/img/protection.png",
+        "heading":"Protection",
+        "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "url":""
+      },
+      {
+        "image_path":"./assets/img/support.png",
+        "heading":"Support",
+        "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "url":""
+      }
+    ],
+    "feature_testimonial":[
+      {
+        "image_path":"",
+        "name":"",
+        "type":"",
+        "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "image_path":"",
+        "name":"",
+        "type":"",
+        "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+        "image_path":"",
+        "name":"",
+        "type":"",
+        "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      }
+    ]
+  }
+}

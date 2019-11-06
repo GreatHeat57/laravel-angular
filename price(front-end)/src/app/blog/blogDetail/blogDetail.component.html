@@ -1,0 +1,89 @@
+<!-- Blog Detail wrapper -->
+<div class="blog-detail section-gap pt-5" ></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12 mb-3" *ngIf="loadState==true">
+				
+				<div class="overlay-wrap mb-4">
+					<ngb-carousel class="col-6 mx-auto none-border">
+						<ng-template ngbSlide *ngFor="let image of detailData.image">
+							<img src="{{image}}" alt="Delhi Metro">
+							<div class="carousel-caption">
+							</div>
+						</ng-template>
+					</ngb-carousel>
+				</div>
+				<div class="blog-content text-center">
+					<!-- title -->
+					<h4 class="mb-3"><a routerLink="/blog-detail">{{detailData.title}}</a></h4>
+					<!-- stars, price -->
+					<div class="blog-meta mb-1">
+						<a href="javascript:void(0);" class="mr-3 text-muted" *ngIf="detailData.stars==1">
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<!-- <i class="fas fa-star mr-2"></i> -->
+						</a>
+						<a href="javascript:void(0);" class="mr-3 text-muted" *ngIf="detailData.stars==2">
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<!-- <i class="fas fa-star mr-2"></i> -->
+						</a>
+						<a href="javascript:void(0);" class="mr-3 text-muted" *ngIf="detailData.stars==3">
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<!-- <i class="fas fa-star mr-2"></i> -->
+						</a>
+						<a href="javascript:void(0);" class="mr-3 text-muted" *ngIf="detailData.stars==4">
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<!-- <i class="fas fa-star mr-2"></i> -->
+						</a>
+						<a href="javascript:void(0);" class="mr-3 text-muted" *ngIf="detailData.stars==5">
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<i class="fa-star fa text-primary mr-1 font-lg"></i>
+							<!-- <i class="fas fa-star mr-2"></i> -->
+						</a>
+						<a href="javascript:void(0);" class="text-muted">
+							<i class="fa-eur fa text-primary font-lg mr-2"></i>
+							<span class="font-lg text-primary">{{detailData.price}}</span>
+						</a>
+					</div>
+					<!-- country, city, region -->
+					<div class="blog-categories mb-3 font-sm">
+						<p class="mb-0 d-inline-block mr-2">Location:</p>
+						<div class="categories-tag d-inline-block">
+							<a href="javascript:void(0);">{{detailData.country}},</a>
+							<a href="javascript:void(0);">{{detailData.region}},</a>
+							<a href="javascript:void(0);">{{detailData.city}},</a>
+						</div>
+					</div>
+					<!-- description -->
+					<p class="mb-3">{{detailData.descript}}</p>
+					<!-- read more link -->
+					<div class="blog-categories mb-3 font-sm">
+						<div class="categories-tag d-inline-block">
+							<a href="javascript:void(0);">Wifi: <i class="fa fa-wifi" aria-hidden="true"></i></a>&nbsp;
+							<a href="javascript:void(0);">Transport Type: <i class="fa fa-plane" aria-hidden="true"></i></a>
+							<a href="javascript:void(0);"><i class="fa fa-bus" aria-hidden="true"></i></a>
+							<a href="javascript:void(0);">&nbsp; Pet Allowed: <i class="fa fa-paw" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="blog-categories mb-3 font-sm">
+						<div class="categories-tag d-inline-block">
+							<a href="javascript:void(0);">Latitude: {{detailData.latitude}}</a>&nbsp;
+							<a href="javascript:void(0);">Longitude: {{detailData.longitude}}</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-12 col-lg-12 mb-3" *ngIf="loadState==false">
+					Empty Detail
+				</div>
+		</div>
+	</div>
+</div>

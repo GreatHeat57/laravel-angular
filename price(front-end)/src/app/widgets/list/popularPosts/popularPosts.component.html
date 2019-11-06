@@ -1,0 +1,24 @@
+<!-- Popular Post -->
+<div class="popular-post mb-3">
+	<div class="mb-4">
+	    <h4 class="sidebar-title mb-3">Popular Posts</h4>
+	</div>
+	<div *ngFor="let post of popularPosts ? popularPosts.slice(0,3):[]">
+		<div class="media mb-4">
+			<img [src]="post?.image_path" class="d-flex mr-3" width="100" height="100" />
+			<div class="media-body">
+				<p class="mb-2"><a href="javascript:void(0)">{{post?.heading}}</a></p>
+				<div class="blog-meta">
+	                <a href="javascript:void(0)" class="mr-2">
+	                   <i class="fa {{post?.user_icon}} mr-2 text-muted font-lg"></i>
+	                   <span class="text-muted font-sm"> {{post?.user_name}}</span>
+	                </a>
+	                <a href="javascript:void(0)">
+	                   <i class="fa fa-calendar-o mr-2 text-muted font-lg"></i>
+	                   <span class="text-muted font-sm">{{post?.date*1000 | date }}</span>
+	                </a>
+	             </div>
+			</div>
+		</div>
+	</div>
+</div>

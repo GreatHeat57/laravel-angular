@@ -1,0 +1,40 @@
+{
+	"data":[
+      {
+         "image_path": "assets/img/1-blog.jpg",
+         "heading": "Nothing was the same",
+         "date":1500163200,
+         "user_name":"Admin",
+         "user_icon":"fa-user-circle-o",
+         "content": "Quisque et tincidunt ex, ut mollis ante. Vestibulum vulputate eget nulla sed tincidunt. Nam euismod sem...",
+			"read_more_bgcolor":""
+      },
+      {
+         "image_path": "assets/img/2-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "user_icon":"fa-user-circle-o",
+         "content": "Quisque et tincidunt ex, ut mollis ante. Vestibulum vulputate eget nulla sed tincidunt. Nam euismod sem...",
+			"read_more_bgcolor":""
+      },
+      {
+         "image_path": "assets/img/3-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "user_icon":"fa-user-circle-o",
+         "content": "Quisque et tincidunt ex, ut mollis ante. Vestibulum vulputate eget nulla sed tincidunt. Nam euismod sem...",
+			"read_more_bgcolor":""
+      },
+      {
+         "image_path": "assets/img/4-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "user_icon":"fa-user-circle-o",
+         "content": "Quisque et tincidunt ex, ut mollis ante. Vestibulum vulputate eget nulla sed tincidunt. Nam euismod sem...",
+			"read_more_bgcolor":""
+      }
+	]
+}

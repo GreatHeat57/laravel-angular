@@ -1,0 +1,28 @@
+<!-- Latest Blog Masonry -->
+<div class="blog-masonry-wrapper section-gap">
+   <div class="container">
+      <div class="row">
+         <div *ngFor="let masonary2 of blogMasonary2" class="{{masonary2?.mClass}}">
+            <div class="card-deck">
+               <div class="card border-rad text-white text-center mb-4">
+                  <img class="card-img" [src]="masonary2?.image_path" alt="Card image">
+                  <div class="card-img-overlay black-tp-layer border-rad p-5 p-5-down">
+                     <a href="javascript:void(0)" class="card-title text-white font-2x mb-4 d-inline-block">{{masonary2?.heading}}</a>
+                     <p class="card-text mb-3"> {{masonary2?.content}}</p>
+                     <div>
+                        <img [src]="masonary2?.avatar" alt="user image" class="rounded-circle shadow-md img-fluid mb-2" width="60" height="60" />
+                        <span class="text-white d-block">{{masonary2?.user_name}}</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Load More -->
+<div class="load-more px-4 pb-5 text-center">
+   <div class="container">
+      <a href="javascript:void(0)" class="text-muted font-lg"> <i class="fa fa-refresh mr-3 fa-spin"></i>LOAD MORE </a>
+   </div>
+</div>

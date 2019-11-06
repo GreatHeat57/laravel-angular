@@ -1,0 +1,27 @@
+<!-- Search now -->
+<div class="search section-gap">
+   <div class="row">
+      <div class="col-sm-8 col-md-5 mx-auto">
+         <angly-searchNow></angly-searchNow>
+      </div>
+   </div>
+</div>
+
+<div class="search-ques pb-5">
+   <div class="container">
+      <div class="text-center mb-5">
+         <h2 class="font-2x">About <span class="text-primary">{{searchList?.length}} results</span> found in Angly.</h2>
+      </div>
+      <div class="row">
+         <div class="col-sm-12 col-md-12 col-lg-6" *ngFor="let list of searchList">
+            <div class="cards border-bottom mb-3">
+               <div class="card-body">
+                  <h3 class="font-lg">{{list?.heading}}</h3>
+                  <a href="javascript:void(0);" class="font-sm mb-2 d-inline-block">{{list?.link}}</a>
+                  <p class="text-muted mb-0">{{list?.content}}</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

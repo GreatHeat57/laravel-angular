@@ -1,0 +1,23 @@
+{
+	"data":[
+		{
+			"value":"(123) 456-7890",
+			"heading":"Phone",
+			"img":"fa fa-phone",
+			"title":"Call Us"
+		},
+
+		{
+			"value":"support@theironnetwork.org",
+			"heading":"Mail",
+			"img":"fa fa-envelope-o",
+			"title":"Send Us Mail"
+		},
+		{
+			"value":"E-51, Industrial area, Phase 8 Mohali, Punjab",
+			"heading":"Address",
+			"img":"fa fa-location-arrow",
+			"title":"Address"
+		} 
+	]
+}

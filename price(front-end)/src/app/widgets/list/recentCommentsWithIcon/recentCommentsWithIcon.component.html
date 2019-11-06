@@ -1,0 +1,14 @@
+<!-- Recent Comment with icon widget -->
+<div class="mb-3">
+    <h4 class="sidebar-title">Recent Comments </h4>
+</div>
+<ul  class="list-unstyled">
+    <li *ngFor="let comments of recentComments" class="border-bottom py-2">
+        <a href="javascript:void(0)" class="media">
+            <span class="d-flex mr-3"><i class="fa {{comments?.icon}} text-primary pt-1"></i> </span>
+            <div class="media-body">
+                <p class="m-0">{{comments?.content}}</p>
+            </div>
+        </a>
+    </li>
+</ul>

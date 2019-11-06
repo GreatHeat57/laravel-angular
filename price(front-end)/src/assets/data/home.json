@@ -1,0 +1,35 @@
+{
+  "data":{
+      "video_content":{
+         "heading":"How It Works",
+         "short_content":"Angly is developed with easy component and file structure which is easy to modify or extend with new components.",
+         "content":[
+            "Select a page template.",
+            "Configure API url for content.",
+            "Map your data fields.",
+            "Enjoy dynamic pages with live content."
+         ],
+         "video_link": "https://www.youtube.com/watch?v=hw2smSOJIv4"
+      },
+      "mobile_featured":[
+         {
+            "icon_path":"ion-ios-crop",
+            "icon_class":"text-info",
+            "title":"Fully Responsive Design",
+            "content":"Fully responsive design on all browsers and mobiles devices without hiding any element."
+         },
+         {
+            "icon_path":"ion-ios-color-wand",
+            "icon_class":"text-success",
+            "title":"30+ Page Templates",
+            "content":"30+ Beautifully designed page templates for your blog, portfolio, gallery and any other type of content."
+         },
+         {
+            "icon_path":"ion-ios-albums",
+            "icon_class":"text-warning",
+            "title":"500+ UI elements",
+            "content":"Lots of UI elements and components gives you the power to build fully functional apps."
+         }
+      ]
+  }
+}

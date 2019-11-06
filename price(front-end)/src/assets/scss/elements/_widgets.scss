@@ -1,0 +1,88 @@
+/*========== All Widgets Css ==========*/
+//--- Social widget ---//
+.bg-linked {
+	background-color: #008EC6;
+}
+.bg-facebook {
+	background-color: #4C6FA9;
+}
+.bg-twitter {
+	background-color: #64BAF2;	
+}
+.bg-google {
+	background-color: #E25E41;	
+}
+.bg-insta {
+	background-color: #E2419C;	
+}
+.bg-snapchat {
+	background-color: #F8C51C;	
+}
+.bg-pinterest {
+	background-color: #FF0808;	
+}
+.bg-youtube {
+	background-color: #D02A06;	
+}
+//--- Recent Comment ---//
+.recent-comment, .contact-form {
+	ul {
+		li {
+			a {
+				color: $gray-700;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+	}
+}
+.sidebar-widget {
+	.card.border-bottom-dash {
+		border-top: none;
+		border-right: none;
+		border-left: none;
+	}
+}
+.close {
+	opacity: 1;
+	cursor: pointer;
+}
+angly-testimonial2 .media {
+	border-radius: 5px;
+}
+.category-list {
+	.border-left {
+		@include border(6px solid, $gray-500, left);
+	}
+}
+.title {
+	a {
+		color: $gray-700;
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+.chk-icon-head{
+    width: 30px;
+}
+@media(max-width:560px){
+  .chk-icon-desp a{
+ font-size: 95% !important;   
+}  
+}
+
+/*======== Categories slide ==========*/
+.category-list li {
+  position: relative;
+  background: $gray-300;
+  a {
+    color: $gray-700;
+  }
+}
+/*======= Feature Page Style ==========*/
+.skills-wrapper .progress {
+  background: $gray-700;
+  border-radius: 0;
+}

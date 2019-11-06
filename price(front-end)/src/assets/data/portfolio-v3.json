@@ -1,0 +1,44 @@
+{
+  "data":[
+   {
+      "image_path":"./assets/img/1-project.jpg",
+      "title":"Productivity Tools",
+      "title_color":"bg-info",
+      "heading":"Beautiful Designs",
+      "read_more_url":"javascript:void(0);",
+      "content": "Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi."
+   },
+   {
+      "image_path":"./assets/img/2-project.jpg",
+      "title":"Productivity Tools",
+      "title_color":"badge-warning",
+      "heading":"Mutifunctionals Blocks",
+      "read_more_url":"javascript:void(0);",
+      "content": "Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi."
+   },
+   {
+      "image_path":"./assets/img/3-project.jpg",
+      "title":"Productivity Tools",
+      "title_color":"bg-yellow",
+      "heading":"Angular App For Game",
+      "read_more_url":"javascript:void(0);",
+      "content": "Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi."
+   },
+   {
+      "image_path":"./assets/img/4-project.jpg",
+      "title_color":"badge-primary",
+      "title":"Productivity Tools",
+      "heading":"HD Images For Portfolio",
+      "read_more_url":"javascript:void(0);",
+      "content": "Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi."
+   },
+   {
+      "image_path":"./assets/img/5-project.jpg",
+      "title":"Productivity Tools",
+      "title_color":"badge-danger",
+      "heading":"HTML 5 App For Game",
+      "read_more_url":"javascript:void(0);",
+      "content": "Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi."
+   }
+   ]
+}

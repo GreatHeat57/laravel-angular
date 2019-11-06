@@ -1,0 +1,130 @@
+<!-- Sidebar Widget layout -->
+<div class="sidebar-widget section-gap">
+   <div class="container">
+      <div class="card-columns">
+         <div class="">
+            <div class="card border-bottom-dash angly-widget">
+               <div class="card-body">
+                  <h4 class="mb-3"> Search </h4>
+                  <angly-searchNow></angly-searchNow>
+               </div>
+            </div>
+         </div>
+         <!-- search now widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <angly-categoriesList [categories]="categories"></angly-categoriesList> 
+         </div> 
+         <!-- Categories widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <angly-popularPosts [popularPosts]="popularPosts"></angly-popularPosts>
+         </div>
+         <!-- Popular post widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="social-share mb-3">
+               <angly-socialShareList [socialShare]="socialShare"></angly-socialShareList>
+            </div>
+         </div>
+         <!-- Social Share widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="social-share mb-3">
+               <angly-socialTags [Socials]="socialShare"></angly-socialTags>
+            </div>
+         </div>
+         <!-- Social icon widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="recent-comment mb-3">
+               <angly-recentCommentsWithDate [recentComments]="recentComments"></angly-recentCommentsWithDate>
+            </div>
+         </div>
+         <!-- Recent Comment widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="recent-comment mb-3">
+               <angly-recentCommentsWithIcon [recentComments]="recentComments"></angly-recentCommentsWithIcon>
+            </div>
+         </div>
+         <!-- Recent Comment icon widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="subscribe mb-3 border border-rad">
+               <angly-subsribeSidebar></angly-subsribeSidebar>
+            </div>
+         </div>
+         <!-- Subscribe closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <angly-instagramGallary [InstagramImages]="instagramGallary"></angly-instagramGallary>
+         </div>
+         <!-- Instagram Gallery widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="mb-3">
+               <angly-tabStructure [tabsContent]="tabContent"></angly-tabStructure>
+            </div>
+         </div>
+         <!-- Tab post Widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="contact-widget mb-3">
+               <angly-contactUsList [contact]="contactInfo"></angly-contactUsList>
+            </div>
+         </div>
+         <!-- Contact list widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="contact-form mb-3">
+               <angly-contactUs2 [contact]="contactInfo"></angly-contactUs2>
+            </div>
+         </div>
+         <!-- Contact Form widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="cart-widget mb-3">
+               <angly-cart [cart]="cartInfo"></angly-cart>
+            </div>
+         </div>
+         <!-- Cart widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="mb-3">
+               <angly-latestTweets [tweets]="tweets"></angly-latestTweets>
+            </div>
+         </div>
+         <!-- Latest tweets Widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="mb-3">               
+               <angly-category2 [categories]="categories"></angly-category2>
+            </div>
+         </div>
+         <!-- Categories Widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="mb-3">
+               <angly-tags1 [tags]="tags"></angly-tags1>
+            </div>
+         </div>
+         <!-- Tags Widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="mb-3">
+               <angly-testimonial1 [testimonialContent]="testimonial"></angly-testimonial1>
+            </div>
+         </div>
+         <!-- Testimonial-1 Widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="mb-3">
+               <angly-testimonial2 [testimonial2Content]="testimonial"></angly-testimonial2>
+            </div>
+         </div>
+         <!-- Testimonial-2 Widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="mb-3">
+               <angly-archive [archive]="archive"></angly-archive>
+            </div>
+         </div>
+         <!-- Archive Widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="mb-3">
+               <angly-tags2 [tags]="tags"></angly-tags2>
+            </div>
+         </div>
+         <!-- Tags Widget closed -->
+         <div class="angly-widget card border-bottom-dash">
+            <div class="mb-3">
+               <angly-aboutAuthor [aboutAuthor]="authorInfo"></angly-aboutAuthor>
+            </div>
+         </div>
+         <!-- Author Widget closed -->
+      </div><!-- row closed -->
+   </div>
+</div><!--sidebar widget closed --> 

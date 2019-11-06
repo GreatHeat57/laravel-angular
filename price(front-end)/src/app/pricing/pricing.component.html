@@ -1,0 +1,201 @@
+<div class="pricing-wrapper">
+   <!-- Plans and Pricing section -->
+   <div class="pricing-section-1 py-5 bg-light">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 m-sm-b">
+               <div class="card text-center border-0 border-rad">
+                  <div class="card-body p-4">
+                     <span class="mb-4 d-block"> Student </span>
+                     <h2 class="font-4x px-2 fw-200 mb-4"><sup class="font-xs">$</sup>
+                        19<sub class="font-sm"> </sub>
+                     </h2>
+                     <ul class="list-unstyled pricing-list mb-5">
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Up to 10 users monthly 
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Unlimited updates 
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-times mr-2"></i>
+                           Free host & domain 
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-times mr-2"></i>
+                           Support 24 / 7 
+                        </li>
+                     </ul>
+                     <a href="javascript:void(0);" class="btn btn-outline-secondary btn-pill btn-block btn-lg submit-btn">Buy</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 m-sm-b">
+               <div class="card text-center border-0 border-rad active">
+                  <div class="card-body p-4">
+                     <span class="mb-4 d-block"> Professional </span>
+                     <h2 class="font-4x px-2 fw-200 mb-4"><sup class="font-xs">$</sup>
+                        119<sub class="font-sm"> </sub>
+                     </h2>
+                     <ul class="list-unstyled pricing-list mb-5">
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Up to 10 users monthly 
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Unlimited updates 
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-times mr-2"></i>
+                           Free host & domain 
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-times mr-2"></i>
+                           Support 24 / 7 
+                        </li>
+                     </ul>
+                     <a href="javascript:void(0);" class="btn btn-outline-secondary btn-pill btn-block btn-lg submit-btn">Buy</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 m-sm-b">
+               <div class="card text-center border-0 border-rad">
+                  <div class="card-body p-4">
+                     <span class="mb-4 d-block"> Master </span>
+                     <h2 class="font-4x px-2 fw-200 mb-4"><sup class="font-xs">$</sup>
+                        344<sub class="font-sm"> </sub>
+                     </h2>
+                     <ul class="list-unstyled pricing-list mb-5">
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Up to 10 users monthly 
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Unlimited updates 
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-times mr-2"></i>
+                           Free host & domain 
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-times mr-2"></i>
+                           Support 24 / 7 
+                        </li>
+                     </ul>
+                     <a href="javascript:void(0);" class="btn btn-outline-secondary btn-pill btn-block btn-lg submit-btn">Buy</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="pricing-section-2">
+      <div class="pricing-grid">
+         <div class="container">
+            <div class="section-title-wrapper mb-5">
+               <div class="row">
+                  <div class="col-sm-12 col-md-9 mx-auto text-center">
+                     <h2 class="mb-3 text-white"> Plans and Pricing  </h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4  m-sm-b" *ngFor="let content of pricingContent">
+                  <div class="pricing-card border-0 pt-5 px-4 pb-4 border-rad">
+                     <span class="mb-4 {{content?.bg_color}} p-2 px-3 btn-pill text-center d-inline-block"> {{content?.home_title}} </span>
+                     <h2 class="font-4x px-2 fw-200 mb-4"><sup class="font-xs"> {{content?.currency}} </sup>
+                        {{content?.price}} <sub class="font-sm"> </sub>
+                     </h2>
+                     <ul class="list-unstyled pricing-list mb-5">
+                        <li class="mb-3" *ngFor="let pricingList of content?.pricing_list">
+                           <i class="fa {{pricingList?.icon}} mr-2"></i>
+                           {{ pricingList?.value }}
+                        </li>
+                     </ul>
+                     <a href="javascript:void(0);" class="btn btn-outline-secondary btn-pill btn-lg submit-btn btn-block">Buy</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="pricing-section-3">
+      <div class="section-gap">
+         <div class="container">
+            <div class="card-deck">
+               <div class="card border-0 border-rad card-shadow m-sm-b">
+                  <div class="card-body p-4">
+                     <div class="card-header border-0 mb-3">
+                        <div class="d-flex justify-content-between">
+                           <div class="d-flex align-content-start">
+                              <h2 class="m-0">Basic Plans</h2>
+                           </div>
+                           <div class="d-flex align-content-end">
+                              <h5 class="m-0">Free</h5>
+                           </div>
+                        </div>
+                     </div>
+                     <ul class="list-unstyled mb-5">
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Sell product with access to 10 space
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Practice live with our sell Challenge Engine
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Get help in our members-only form
+                        </li>
+                     </ul>
+                     <a href="javascript:void(0);" class="btn btn-outline-secondary btn-pill btn-block btn-lg submit-btn">Buy</a>
+                  </div>
+               </div>
+               <div class="card border-0 border-rad card-shadow bg-info">
+                  <div class="card-body p-4">
+                     <div class="card-header border-0 mb-3">
+                        <div class="d-flex justify-content-between">
+                           <div class="d-flex align-content-start">
+                              <h2 class="m-0 text-white">Basic Plans</h2>
+                           </div>
+                           <div class="d-flex align-content-end">
+                              <h5 class="m-0 text-white">$48</h5>
+                           </div>
+                        </div>
+                     </div>
+                     <ul class="list-unstyled mb-5">
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Sell product with access to 10 space
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Practice live with our sell Challenge Engine
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Get help in our members-only form
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Sell product with access to 10 space
+                        </li>
+                        <li class="mb-3">
+                           <i class="fa fa-check mr-2"></i>
+                           Practice live with our sell Challenge Engine
+                        </li>
+                     </ul>
+                     <a href="javascript:void(0);" class="btn btn-light btn-pill btn-block btn-lg submit-btn">Buy</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+

@@ -1,0 +1,310 @@
+/*=========== All Site Effects =========*/
+
+/*===== Gallery Fade Down Effect ======*/
+.overlay-wrap:hover .ih-fade-down {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.ih-fade-down {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-60px);
+    transition: all 0.5s ease-in-out 0s;
+    overflow: hidden;
+}
+/*========= Blog Fade Right Effect ========*/
+.overlay-wrap {
+    &:hover .ih-fade-right {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.ih-fade-right {
+    display: block;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.5s ease-in-out 0s;
+}
+/*====== Zoom In Effect on Images ======*/
+.zoom-in{
+  overflow:hidden;
+  img {
+    transition: all 1s ease;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+/*======= Button Hover Effect =========*/
+.btn-chk {
+  border-radius: 5px;
+  display: inline-block;
+  letter-spacing: 1px;
+  box-shadow: inset 0 0 0 0 $white;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  &:hover {
+    box-shadow: inset 0 0 0 50px $white;
+  }
+} 
+.btn-chk-dark {
+    @extend .btn-chk;
+    box-shadow: inset 0 0 0 0 $gray-800;
+    &:hover {
+      color: $gray-800;
+    }
+}
+/*======== Submit Button hover Effect =======*/
+.submit-btn {
+  transition: all 0.2s linear 0s;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "\f0a4";
+    font-family: FontAwesome;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 40px;
+    height: 100%;
+    background-color: transparent;
+    transition: all 0.2s linear 0s;
+    text-align: center;
+  }
+  &:hover {
+    text-indent: -40px;
+    &:before {
+      right: 0;
+      text-indent: 0px;
+    }
+  }
+}
+
+/*======== Social Widget Effect ========*/
+.social-icon-widget {
+    li {
+        a {
+          transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+          &:hover {
+            box-shadow: 0 6px 28px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s ease 0s;
+            transform: translateY(-10px);
+          }
+        }
+    }
+}
+/*======= Home Dynamic heading ===========*/
+.d-title {
+    display: inline;
+    text-indent: 10px;
+    margin-right: 715px;
+    span {
+        position: absolute;
+        opacity: 0;
+        overflow: hidden;
+        color: $white;
+        -webkit-animation: rotateWord 4s linear infinite 0s;
+        -ms-animation: rotateWord 4s linear infinite 0s;
+        animation: rotateWord 4s linear infinite 0s;
+        &:nth-child(2) {
+            -webkit-animation-delay: 2s; 
+            -ms-animation-delay: 2s; 
+            animation-delay: 2s; 
+            color: $white;
+        }
+        &:nth-child(3) {
+            -webkit-animation-delay: 4s; 
+            -ms-animation-delay: 4s; 
+            animation-delay: 4s; 
+            color: $white;  
+        }
+    }
+}
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    47% { opacity: 1; -webkit-transform: translateY(0px); }
+    50% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+    5% { opacity: 1; -ms-transform: translateY(0px);}
+    47% { opacity: 1; -ms-transform: translateY(0px); }
+    50% { opacity: 0; -ms-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    47% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+    50% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+/*======= card line effect ========*/
+.card-line-box {
+    transition: all 0.35s linear 0s;
+    h3 {
+        padding-bottom: .68182em;
+        overflow: hidden;
+        position: relative;
+        &:before, &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform-origin: left center;
+            background-color: rgba(0, 0, 0, 0.2);
+            transition: transform 0.65s cubic-bezier(0.7, 0, 0.2, 1);
+        }
+        &:before {
+            transform: scale3d(0.13, 1, 1);
+        }
+        &:after {
+          transform: translate3d(-10px, 0, 0) scale3d(0, 1, 1);
+        }
+    }
+    &:hover {
+        -webkit-box-shadow: 0 20px 80px rgba(0, 0, 0, 0.12);
+        box-shadow: 0 20px 80px rgba(0, 0, 0, 0.12);
+        h3 {
+          &:before {
+            transform-origin: left center;
+            transform: translate3d(100%, 0, 0) scale3d(2, 1, 1);
+          }
+          &:after {
+            transform-origin: left center;
+            transition-delay: 0.1s;
+            transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+          }
+        }
+    }
+}
+/*========= Video Play Button Effect =========*/
+.play-button {
+  display: inline-block;
+  span {
+    display: block;
+  }
+  > i {
+    display: block;
+    height: 90px;
+    width: 90px;
+    position: relative;
+    border-radius: 50em;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 22px;
+    font-style: normal;
+    color: $white;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    > span {
+      width: 100%;
+      position: absolute;
+      top: 52%;
+      left: 0;
+      line-height: 1.1em;
+      overflow: hidden;
+      -webkit-transform: translate3d(0, -50%, 0);
+      transform: translate3d(0, -50%, 0);
+    }
+    .btn-text {
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      span {
+        -webkit-transform: translate3d(0, 105%, 0);
+        transform: translate3d(0, 105%, 0);
+        -webkit-animation: slideToTop 0.3s cubic-bezier(0.3, 0, 0.19, 1) both;
+        animation: slideToTop 0.3s cubic-bezier(0.3, 0, 0.19, 1) both;
+      }
+      + .btn-icon {
+        text-indent: 2px;
+        i {
+          -webkit-animation: slideFromBottom 0.4s 0.15s cubic-bezier(0.15, 0.75, 0.19, 1) both;
+          animation: slideFromBottom 0.4s 0.15s cubic-bezier(0.15, 0.75, 0.19, 1) both;
+        }
+      }
+    }
+  }
+  &:hover > i {
+    &:before {
+      opacity: 1;
+    }
+    .btn-text {
+      span {
+        -webkit-animation: slideFromBottom 0.4s 0.15s cubic-bezier(0.15, 0.75, 0.19, 1) both;
+        animation: slideFromBottom 0.4s 0.15s cubic-bezier(0.15, 0.75, 0.19, 1) both;
+      }
+      + .btn-icon i {
+        -webkit-animation: slideToTop 0.3s cubic-bezier(0.3, 0, 0.19, 1) both;
+        animation: slideToTop 0.3s cubic-bezier(0.3, 0, 0.19, 1) both;
+      }
+    }
+  }
+}
+@-webkit-keyframes slideFromBottom {
+  from {
+    -webkit-transform: translate3d(0, 105%, 0);
+    transform: translate3d(0, 105%, 0)
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+}
+@keyframes slideFromBottom {
+  from {
+    -webkit-transform: translate3d(0, 105%, 0);
+    transform: translate3d(0, 105%, 0)
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+}
+@-webkit-keyframes slideToTop {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  to {
+    -webkit-transform: translate3d(0, -105%, 0);
+    transform: translate3d(0, -105%, 0)
+  }
+}
+@keyframes slideToTop {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  to {
+    -webkit-transform: translate3d(0, -105%, 0);
+    transform: translate3d(0, -105%, 0)
+  }
+}
+/*========= Testimonial Shadow Effect =========*/
+.testimonial-wrapper {
+  .card {
+    transition: all 0.4s ease-in-out 0s;
+    &:hover   {
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

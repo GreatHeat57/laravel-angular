@@ -1,0 +1,39 @@
+{
+  "data":{
+    "business_hours":[
+      {
+         "status":1,
+         "value":"Monday – Friday: 9am to 20 pm"
+      },
+      {
+         "status":0,
+         "value":"Saturday: 9am to 17 pm"
+      },
+      {
+         "status":0,
+         "value":"Sunday: day off"
+      }
+    ],
+    "phone":[
+      {
+         "status":1,
+         "value":"+123 456 7890"
+      },
+      {
+         "status":0,
+         "value":"+123 456 7890"
+      }
+    ],
+    "email":[
+      {
+         "status":1,
+         "value":"support@theironnetwork.org"
+      },
+      {
+         "status":0,
+         "value":"support@theironnetwork.org"
+      }
+    ],
+    "location": "E-51, Industrial area, Phase 8 Mohali, Punjab"
+    }
+}

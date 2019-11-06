@@ -1,0 +1,188 @@
+<div class="product-wrapper section-gap">
+	<div class="container">
+		<div class="row mb-4">
+			<div class="col-sm-12 col-md-6">
+				<div class="row">
+					<div class="col-sm-8 col-md-8 m-md-b">
+						<div class="feature-box-thumb">
+							<img src="assets/img/2.jpg" class="img-fluid card-shadow" alt="product image" width="380" height="380" />
+						</div><!-- feature box thumb closed -->
+					</div>
+					<div class="col-sm-4 col-md-4">
+						<ul class="list-unstyled list-p-detail">
+							<li class="mb-3">
+								<a href="javascript:void(0);">
+									<img src="assets/img/2.jpg" class="img-fluid" alt="product image" width="100" height="100" />
+								</a>
+							</li>
+							<li class="mb-3">
+								<a href="javascript:void(0);">
+									<img src="assets/img/2.jpg" class="img-fluid" alt="product image" width="100" height="100" />
+								</a>
+							</li>
+							<li class="mb-3">
+								<a href="javascript:void(0);">
+									<img src="assets/img/2.jpg" class="img-fluid" alt="product image" width="100" height="100" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<div class="mb-3">
+					<h2 class="text-capitalize font-3x mb-3">Fleece Jacket</h2>
+					<h4 class="font-26 text-primary">$125.00</h4>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis eros lobortis, vestibulum turpis ac, pulvinar odio. Praesent vulputate a elit ac mollis. In sit amet ipsum turpis. Pellentesque venenatis, libero vel euismod lobortis, mi metus luctus augue, eget dapibus elit nisi eu massa. Phasellus sollicitudin nisl posuere nibh ultricies.</p>
+				<div class="d-flex justify-content-between">
+					<div class="align-content-start w-50 mr-3">
+						<input class="form-control form-control-lg" placeholder="1" value="1" type="number">
+					</div>
+					<div class="align-content-start w-50">
+						<a routerLink="/product-cart" class="btn btn-primary btn-lg btn-block">Add To Cart</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- row closed -->
+		<div class="tab-style mb-5">
+            <ul class="nav nav-tabs nav-tabs-bottom mb-4">
+                <li class="nav-item" aria-expanded="false"> <a class="nav-link active" aria-expanded="true" data-toggle="tab" href="#tab-1">Description</a> </li>
+                <li class="nav-item"> <a class="nav-link" aria-expanded="false" data-toggle="tab" href="#tab-2">Specification</a> </li>
+                <li class="nav-item"> <a class="nav-link" aria-expanded="false" data-toggle="tab" href="#tab-3">Reviews</a> </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade active show" id="tab-1" aria-expanded="true">
+                    <p>Super charge your walk! Easy portable effortless light weight! Swing Weights were designed to be the best, most effective walking weight on the market.Use Swing Weights as you walk for a low-impact, fully body workout.</p>
+                    <p>The dumbbell material : outside is rubber,inside is cast iron . the weigth is enough .5kg is 5kg ,10kg is 10kg .we also can make client's logo on the cover.</p>
+                </div>
+                <div class="tab-pane fade" id="tab-2" aria-expanded="false">
+                    <p> - Silver, space silver, 1.48 inch TFT LCD capacitive touch screen, 128*128 pixels Resolution; Dial- Plastic; Strap- Flexible &amp; durable
+                    - Bluetooth 4.0, Magnetic charging cable (2 m), Sport Band
+                    - Retina display with Force Touch, Sport Band with stainless steel pin, Composite back, accelerometer
+                   </p>
+                </div>
+                <div class="tab-pane fade" id="tab-3" aria-expanded="false">
+                    <p>If you are willing to buy this watch then just order it right away without any second thought. This is a watch with great tools on it. So the internals had to be pretty good. It is a watch worth every penny. I used it on a daily basis for a pretty long time and it didn't lag even once and still works like charm.</p>
+                </div>
+            </div>
+        </div><!-- tab-style closed -->
+        <div class="related-post mb-3">
+        	<h2 class="mb-5 text-capitalize">Related Products</h2>
+        	<div class="row">
+        		<div class="col-sm-6 col-md-6 col-lg-3" *ngFor="let product of relatedProducts">
+					<div class="card border-0 mb-4">
+						<div class="overlay-wrap mb-4 card-shadow border-rad">
+							<img class="img-fluid border-rad w-100" [src]="product.image" alt="Card image cap" width="280" height="260" />
+							<div class="cart-icon">
+								<ul class="list-unstyled">
+									<li>
+										<a routerLink="/product-detail" class="square-40 bg-white rounded-circle text-dark mb-2 card-shadow">
+											<i class="fa fa-heart text-danger"></i>
+										</a>
+									</li>
+									<li>
+										<a routerLink="/product-detail" class="square-40 bg-white rounded-circle text-dark card-shadow">
+											<i class="fa fa-search"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-body p-0">
+							<h5 class="text-capitalize mb-3">{{product.title}}</h5>
+							<p>{{product.description}}</p>
+							<p class="text-primary">{{product.price | currency: 'USD' : true}}</p>
+						</div>
+					</div>
+				</div>
+        	</div>
+        </div><!-- related post closed -->
+        <div class="our-support mb-5">
+        	<div class="row no-gutters">
+        		<div class="col-sm-12 col-md-4">
+        			<div class="border-0 rounded-0 bg-light text-center">
+        				<div class="card-body p-4">
+	        				<div class="icon mb-3">
+	        					<span><i class="ion-ios-globe font-4x"></i></span>
+	        				</div>
+	        				<h5 class="text-capitalize mb-3">Free Delivery</h5>
+	        				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="col-sm-12 col-md-4">
+        			<div class="border-0 rounded-0 bg-light text-center">
+        				<div class="card-body p-4">
+	        				<div class="icon mb-3">
+	        					<span><i class="ion-ios-sync font-4x"></i></span>
+	        				</div>
+	        				<h5 class="text-capitalize mb-3">Refund &amp; Return</h5>
+	        				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="col-sm-12 col-md-4">
+        			<div class="border-0 rounded-0 bg-light text-center">
+        				<div class="card-body p-4">
+	        				<div class="icon mb-3">
+	        					<span><i class="ion-ios-chatboxes font-4x"></i></span>
+	        				</div>
+	        				<h5 class="text-capitalize mb-3">24X7 Support</h5>
+	        				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div><!-- our support closed -->
+        <div class="accordion-wrapper">
+			<div id="accordion" role="tablist">
+				<h4 class="text-capitalize mb-4">Frequently Asked Questions</h4>
+				<div class="simple-line-accordion pt-1">
+					<div class="card">
+						<div class="card-header" role="tab" id="headingOne">
+							<h2 class="mb-0 font-2x">
+								<a class="accordion-toggle" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Collapsible Group Item #1
+								</a>
+							</h2>
+						</div>
+						<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" role="tab" id="headingTwo">
+							<h2 class="mb-0 font-2x">
+								<a class="collapsed accordion-toggle" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Collapsible Group Item #2
+								</a>
+							</h2>
+						</div>
+						<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" role="tab" id="headingThree">
+							<h2 class="mb-0 font-2x">
+								<a class="collapsed accordion-toggle" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Collapsible Group Item #3
+								</a>
+							</h2>
+						</div>
+						<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- accordions closed -->
+		</div>
+	</div><!-- container closed -->
+</div><!-- product wrapper closed -->

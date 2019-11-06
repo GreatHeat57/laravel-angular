@@ -1,0 +1,35 @@
+<!-- Post Section -->
+<div class="post-section section-gap">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12 col-md-6 col-lg-4 mb-5" *ngFor="let post3Column of blogColumn3">
+            <div class="card border-0 border-rad">
+               <img class="border-rad-top img-fluid w-100" [src]="post3Column?.image_path" alt="Card image cap" width="370" height="250" />
+               <div class="card-body border-rad-bottom">
+                  <h5 class="card-title mb-3"><a routerLink="/blog-detail">{{post3Column?.heading}}</a></h5>
+                  <p class="card-text">{{post3Column?.content}}</p>
+                  <div class="card-footer pt-2 p-0">
+                     <div class="d-flex justify-content-between">
+                        <a class="d-flex align-content-start text-muted">
+                           <i class="fa {{post3Column?.user_icon}} align-self-center mr-2 font-lg"></i>
+                           <span class="font-sm"> {{post3Column?.user_name}}</span>
+                        </a>
+                        <a class="d-flex align-content-end">
+                           <i class="fa fa-calendar-o mr-2 align-self-center font-lg"></i>
+                           <span class="font-sm">{{post3Column?.date*1000 | date }}</span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Load More -->
+<div class="load-more px-4 pb-5 text-center">
+   <div class="container">
+      <a href="javascript:void(0)" class="text-muted font-lg"> <i class="fa fa-refresh mr-3 fa-spin"></i>LOAD MORE </a>
+   </div>
+</div>
+

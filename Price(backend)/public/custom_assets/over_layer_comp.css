@@ -1,0 +1,19 @@
+.overlay {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: .25rem;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(255,255,255,.7);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 50;
+}
+.overlay.dark {
+    background: rgba(0,0,0,.5);
+}

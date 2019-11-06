@@ -1,0 +1,14 @@
+<!-- Categories list -->
+<div class="categories-list mb-4">
+    <div class="mb-4">
+        <h4 class="sidebar-title mb-3">Category</h4>
+    </div>
+    <ul class="list list-unstyled" *ngIf="categories">
+        <li class="mb-3" *ngFor="let category of categories">
+            <a href="javascript:void(0)">
+                <i class="ion-ios-arrow-forward mr-2"></i>
+                <span class="align-top">{{category?.name}}</span>
+            </a>
+        </li>
+    </ul>
+</div>

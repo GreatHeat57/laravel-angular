@@ -1,0 +1,45 @@
+<div *ngIf="router?.url != '/sign-up' && router?.url != '/login' && router?.url != '/thank-you' && router?.url != '/not-found' && router?.url != '/maintenance'">
+	<div angly-callToAction heading="Want to work with us?" subHeading="Passionate web design and development since 2009." [buttonInfo]="buttonDetails"></div>
+
+	<!-- Footer  -->
+	<div class="footer-wrapper pt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-lg-4 mb-3">
+					<h4 class="mb-3 text-capitalize">Company</h4>
+					<div angly-menuBlock [footerMenu]="footerCompanyMenu">
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-4 mb-3">
+					<h4 class="mb-3 text-capitalize">Explore</h4>
+					<div angly-menuBlock [footerMenu]="footerExploreMenu">
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-4 mb-3">
+					<h4 class="mb-3 text-capitalize">Company LTD</h4>
+					<div class="address" angly-contact location="E-51, Industrial area, Phase 2 Mohali, Punjab, India." tel="(0172) 462 9900" mail="support@theironnetwork.org">
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<span class="text-muted">&copy; 2019, All right reserved </span>
+					</div>
+					<div class="social-icon-widget mb-2 col-sm-12 col-md-6 text-right">
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><a href="javascript:void(0)" class="square-30 rounded-circle bg-facebook"><i class="fa fa-facebook fa-inverse"></i></a></li>
+							<li class="list-inline-item"><a href="javascript:void(0)" class="square-30 rounded-circle bg-twitter"><i class="fa fa-twitter fa-inverse"></i></a></li>
+							<li class="list-inline-item"><a href="javascript:void(0)" class="square-30 rounded-circle bg-google"><i class="fa fa-google-plus fa-inverse"></i></a></li>
+							<li class="list-inline-item"><a href="javascript:void(0)" class="square-30 rounded-circle bg-pinterest"><i class="fa fa-pinterest fa-inverse"></i></a></li>
+							<li class="list-inline-item"><a href="javascript:void(0)" class="square-30 rounded-circle bg-linked"><i class="fa fa-linkedin fa-inverse"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Back To Top -->
+	<a href="#" id="back-top" class="to-top scrolled" (click)="topScroll($event)"> <span class="to-top-icon"></span> </a>
+</div>
+

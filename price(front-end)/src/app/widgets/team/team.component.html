@@ -1,0 +1,14 @@
+<!-- Team Section -->
+<div class="col-sm-12 col-md-3" *ngFor="let member of team">
+  <img [src]="member?.image_path" />
+  <div *ngIf="router?.url != route">
+    <div class="d-flex align-self-center" angly-socials [socials]="socialDetails" [socialsClasses]="socialsClasses"></div>
+  </div>
+  <div>
+    {{member?.name}}
+  </div>
+  <div *ngIf="router?.url != route">
+    {{member?.type}}
+  </div>
+</div>
+<!-- Team Section Closed -->

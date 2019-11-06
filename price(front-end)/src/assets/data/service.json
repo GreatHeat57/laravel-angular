@@ -1,0 +1,34 @@
+{
+   "data":[
+      {
+        "icon":{
+          "name":"ion-ios-bulb",
+          "color":"text-warning"
+        },
+        "title":" Innovative Designs ",
+        "content":"Flexible fremework to provide you the full control over designs and functionality. Component and modules easy to develope sections with ease.",
+        "link":"javascript:void(0)",
+        "btnBgClass": "btn-outline-warning"
+      },
+      {
+        "icon":{
+          "name":"ion-ios-infinite",
+          "color":"text-primary"
+        },
+        "title":" Flexibility ",
+        "content":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.",
+        "link":"javascript:void(0)",
+        "btnBgClass": "btn-outline-primary"
+      },
+      {
+        "icon":{
+          "name":"ion-ios-flash",
+          "color":"text-info"
+        },
+        "title":" Powerful UI ",
+        "content":"Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. quod maxime pl.",
+        "link":"javascript:void(0)",
+        "btnBgClass": "btn-outline-info"
+      }
+   ]
+}

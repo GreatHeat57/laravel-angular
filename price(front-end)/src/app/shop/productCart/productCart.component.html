@@ -1,0 +1,92 @@
+<!-- Product Cart Wrapper closed -->
+<div class="product-wrapper section-gap">
+	<div class="container">
+		<div class="table-responsive mb-5">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Image</th>
+						<th>Products</th>
+						<th>Price</th>
+						<th>Qty</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="w-25 text-center">
+							<button type="button" class="close text-danger font-2x" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="ion-ios-close"></i></span>
+							</button>
+							<div class="p-img">
+							<img src="assets/img/2.jpg" alt="product image" class="img-fluid card-shadow" width="180" height="180" />
+							</div>
+						</td>
+						<td>Fleece Jacket</td>
+						<td>$36.00</td>
+						<td class="w-15 cart-number"><input class="form-control" placeholder="1" type="number" value="1"></td>
+						<td>$36.00</td>
+					</tr>
+					<tr>
+						<td class="w-25 text-center">
+							<button type="button" class="close text-danger font-2x" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="ion-ios-close"></i></span>
+							</button>
+						<div class="p-img">
+							<img src="assets/img/3.jpg" alt="product image" class="img-fluid card-shadow" width="180" height="180" />
+							</div>
+						</td>
+						<td>Slick Top</td>
+						<td>$55.00</td>
+						<td class="w-15 cart-number"><input class="form-control" placeholder="1" type="number" value="3"></td>
+						<td>$55.00</td>
+					</tr>
+					<tr>
+						<td class="w-25 text-center">
+							<button type="button" class="close text-danger font-2x" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="ion-ios-close"></i></span>
+							</button>
+							<div class="p-img">
+							<img src="assets/img/4.jpg" alt="product image" class="img-fluid card-shadow" width="180" height="180" />
+							</div>
+						</td>
+						<td>Zipped Top</td>
+						<td>$30.00</td>
+						<td class="w-15 cart-number"><input class="form-control" placeholder="1" type="number" value="2"></td>
+						<td>$30.00</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- table responsive closed -->
+		<div class="cart-info">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 m-sm-b">
+					<form class="form-inline" action="javascript:void(0);" method="post">
+						<input class="form-control mr-2 coupon-code" type="text" placeholder="Coupon Code" />
+						<a href="javascript:void(0);" class="btn btn-primary px-4">Apply</a>
+					</form>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="bg-light py-4 px-3">
+						<h2 class="font-26 mb-4">Cart totals</h2>
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>Subtotal</td>
+									<td>$200.00</td>
+								</tr>
+								<tr class="border-bottom">
+									<td>Subtotal</td>
+									<td>$200.00</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="block">
+							<a routerLink="/product-checkout" class="btn btn-primary submit-btn btn-block btn-lg">Checkout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- cart info closed -->
+	</div><!--container closed -->
+</div><!-- product wrapper closed -->

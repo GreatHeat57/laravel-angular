@@ -1,0 +1,52 @@
+{
+	"data":[
+      {
+         "image_path": "assets/img/1-blog.jpg",
+         "heading": "Party Jokes Startling But Unnecessary",
+         "user_name":"Jeff Robertson",
+         "avatar":"assets/img/1-team.jpg",
+         "mClass":"col-sm-12 col-md-6",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a."
+      },
+      {
+         "image_path": "assets/img/2-blog.jpg",
+         "heading": "How To Meet That Special Someone",
+         "user_name":"Callie Boone",
+         "avatar":"assets/img/2-team.jpg",
+         "mClass":"col-sm-12 col-md-6",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer ."
+      },
+      {
+         "image_path": "assets/img/3-blog.jpg",
+         "heading": "Headset No Longer Wired For Sound",
+         "user_name":"Terry Ramsey",
+         "avatar":"assets/img/3-team.jpg",
+         "mClass":"col-sm-12 col-md-6",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer ."
+      },
+      {
+         "image_path": "assets/img/4-blog.jpg",
+         "heading": "Video Games Playing With Imagination",
+         "user_name":"Keith Sharp",
+         "avatar":"assets/img/2-team.jpg",
+         "mClass":"col-sm-12 col-md-6",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer ."
+      },
+      {
+         "image_path": "assets/img/5-blog.jpg",
+         "heading": "How To Meet That Special Someone",
+         "user_name":"Callie Boone",
+         "avatar":"assets/img/1-team.jpg",
+         "mClass":"col-sm-12 col-md-6",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer ."
+      },
+      {
+         "image_path": "assets/img/6-blog.jpg",
+         "heading": "Party Jokes Startling But Unnecessary",
+         "user_name":"Jeff Robertson",
+         "avatar":"assets/img/3-team.jpg",
+         "mClass":"col-sm-12 col-md-6",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took ."
+      }
+	]
+}
