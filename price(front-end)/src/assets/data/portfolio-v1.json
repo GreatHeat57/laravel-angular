@@ -1,0 +1,49 @@
+{
+  "data":[
+    {
+      "image_path":"./assets/img/1-project.jpg",
+      "title":"Lorem Ipsum ",
+      "heading":"Lorem Ipsum is simply dummy."
+    },
+    {
+      "image_path":"./assets/img/2-project.jpg",
+      "title":"Lorem Ipsum ",
+      "heading":"Lorem Ipsum is simply dummy."
+    },
+    {
+      "image_path":"./assets/img/3-project.jpg",
+      "title":"Lorem Ipsum ",
+      "heading":"Lorem Ipsum is simply dummy."
+    },
+    {
+      "image_path":"./assets/img/4-project.jpg",
+      "title":"Lorem Ipsum ",
+      "heading":"Lorem Ipsum is simply dummy."
+    },
+    {
+      "image_path":"./assets/img/5-project.jpg",
+      "title":"Lorem Ipsum ",
+      "heading":"Lorem Ipsum is simply dummy."
+    },
+    {
+      "image_path":"./assets/img/6-project.jpg",
+      "title":"Lorem Ipsum ",
+      "heading":"Lorem Ipsum is simply dummy."
+    },
+    {
+      "image_path":"./assets/img/7-project.jpg",
+      "title":"Lorem Ipsum ",
+      "heading":"Lorem Ipsum is simply dummy."
+    },
+    {
+      "image_path":"./assets/img/8-project.jpg",
+      "title":"Lorem Ipsum ",
+      "heading":"Lorem Ipsum is simply dummy."
+    },
+    {
+      "image_path":"./assets/img/9-project.jpg",
+      "title":"Lorem Ipsum ",
+      "heading":"Lorem Ipsum is simply dummy."
+    }
+  ]
+}

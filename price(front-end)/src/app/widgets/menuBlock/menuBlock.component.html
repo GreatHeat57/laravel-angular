@@ -1,0 +1,8 @@
+
+<ul class="footer-nav list-unstyled"  *ngIf="footerMenu">
+	<li *ngFor="let menu of footerMenu">
+		<a [routerLink]="['/', menu.state]" routerLinkActive="active-link" *ngIf="menu.type === 'link'">
+			<span>{{ menu?.name }}</span>
+		</a>
+	</li>
+</ul>

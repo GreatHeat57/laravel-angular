@@ -1,0 +1,24 @@
+/*=========== Custom Variables integrated =============*/
+//--- Html Variables ---//
+$html-font-size:                    16px;
+
+//--- Main Menu ---//
+$menu-bg-color: 					rgba(255, 255, 255, 1);
+$menu-nav-color:                    $gray-700;
+
+//--- Preloader variable ---//
+$perloader-bg-overlay:              rgba(20, 24, 40, 0.87);
+$preloader-bg-one:                  $blue;
+$preloader-bg-two:                  $orange;
+
+//--- Square box ---//
+$square-font-size:                  0.5; // 50% relative to the container
+$square-box:                     	(10, 15, 20, 30, 40, 50, 60, 70, 100);
+
+//--- Back to top style ---//
+
+$to-top-bg:                             #fff !default;
+$to-top-border-color:                   $gray-500 !default;
+$to-top-border-radius:                  5em !default;
+$to-top-icon-color:                     $blue !default;
+$to-top-icon-hover-color:               #fff !default;

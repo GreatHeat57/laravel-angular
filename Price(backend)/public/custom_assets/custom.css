@@ -1,0 +1,29 @@
+.main-header > .navbar-nav > .nav-item > h1 {
+    font-size: 1.8rem;
+}
+.content-wrapper > .content {
+    padding: 10px;
+}
+
+.form-horizontal .form-group > label {
+    padding-top: 7px;
+    margin-bottom: 5px;
+}
+
+.card-body > .form-horizontal > .form-group:last-child {
+    margin-bottom: 0;
+}
+.custom-control-label::before, .custom-control-label::after {
+    cursor: pointer;
+}
+
+.page-item.active .page-link {
+    box-shadow: 0px;
+}
+.dataTable td {
+    word-break: break-all;
+}
+/* .custom-switch.dark label::before {
+    border-color: #495057 !important;
+    background-color: #495057 !important;
+} */

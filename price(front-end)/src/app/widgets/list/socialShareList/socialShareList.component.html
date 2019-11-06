@@ -1,0 +1,13 @@
+
+<div class="mb-4">
+   <h4 class="sidebar-title mb-3">Social Share </h4>
+</div>
+<a href="{{socialContent?.url}}" *ngFor="let socialContent of socialShare ? socialShare.slice(0,4):[]" class="d-flex justify-content-between {{socialContent?.bg_color}} mb-2 btn btn-block text-white btn-lg">
+   <span class="d-flex align-items-center">
+      <i class="fa {{socialContent?.icon}} mr-3"></i>
+      <span> {{socialContent?.title}} </span>
+   </span>
+   <span class="d-flex align-items-center bg-white text-dark px-2">
+      {{ socialContent?.value }}
+   </span>
+</a>

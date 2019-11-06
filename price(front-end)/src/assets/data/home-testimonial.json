@@ -1,0 +1,32 @@
+{
+   "data":[
+      {
+         "title":"Simply Awesome",
+         "avatar":"assets/img/1-team.jpg",
+         "name":"Jeremy Chavez",
+         "type":"Web Designer",
+         "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+       {
+         "title":"Always go with angly",
+         "avatar":"assets/img/2-team.jpg",
+         "name":"James",
+         "type":"Web Develorer",
+         "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+       {
+         "title":"Great team...love it",
+         "avatar":"assets/img/3-team.jpg",
+         "name":"Max",
+         "type":"Web Expert",
+         "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+       {
+         "title":"No worry with angly",
+         "avatar":"assets/img/2-team.jpg",
+         "name":"Ela Saunders",
+         "type":"Web Designer",
+         "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      }
+   ]
+}

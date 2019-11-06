@@ -1,0 +1,14 @@
+<!-- Team grid  -->
+<div  class="col-sm-12 col-md-4 col-xl-4  team-list" *ngFor="let content of teamGridContent ? teamGridContent.slice(0,3):[]">
+	<div class="card border-0 border-rad">
+		<div class="overlay-wrap">
+			<img class="img-fluid border-rad w-100" [src] ="content?.image_path" alt="Card image cap" width="370" height="317" />
+		</div>
+		<div class="card-body p-0">
+			<h5 class="card-title mb-2">{{content?.name}}</h5>
+			<span class="role font-italic d-block text-primary">{{content?.type}}</span>
+			<p class="card-text">{{content?.content}}</p>
+			<div class="social-icons" angly-socials [socials]="socialDetails" [socialsClasses]="socialsClasses"></div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+<ul class="list-unstyled">
+	<li *ngIf="location">
+		<span><i class="ion-ios-pin mr-3"></i> {{ location }}</span>
+	</li>
+	<li *ngIf="tel">
+		<a href="tel:{{ tel }}"><i class="ion-ios-call mr-3"></i> {{ tel }}</a>
+	</li>
+	<li *ngIf="mail">
+		<a href="mailto:{{ mail }}"><i class="ion-ios-mail mr-3"></i> {{ mail }}</a>
+	</li>
+</ul>

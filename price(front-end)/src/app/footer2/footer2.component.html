@@ -1,0 +1,26 @@
+<div *ngIf="router?.url != '/sign-up' && router?.url != '/login' && router?.url != '/thank-you' && router?.url != '/not-found' && router?.url != '/maintenance'">
+   <!-- Footer section 2 -->
+   <div *ngIf="router?.url != '/home'" angly-subscribe [subscribeFormClasses]="subscribeFormClasses"></div>
+   <div class="footer-wrapper-2 py-5 bg-light">
+      <div class="container container-full-width">
+         <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8">
+               <span class="text-muted">&copy; 2019, All right reserved </span>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+               <div class="social-without-bg text-right">
+                  <ul class="list-inline mb-0">
+                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
+                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
+                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div><!-- container closed -->
+   </div><!-- Footer wrapper closed -->
+   <!-- Back To Top -->
+   <a href="#" id="back-top" class="to-top scrolled" (click)="topScroll($event)"> <span class="to-top-icon"></span> </a>
+</div>

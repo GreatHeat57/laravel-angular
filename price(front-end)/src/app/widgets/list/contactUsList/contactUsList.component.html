@@ -1,0 +1,16 @@
+<!-- Contact Us list widget -->
+<div class="mb-4">
+   <h4 class="sidebar-title mb-3">Contact Us</h4>
+</div>
+<ul class="list-unstyled">
+   <li *ngFor="let contactUs of contact" class="mb-4">
+      <div class="d-flex">
+          <span class="d-inline-block chk-icon-head"> <i class="{{contactUs?.img}} fa-2x text-warning"></i></span>
+         <div class="px-3 chk-icon-desp">
+            <h5 class="text-warning mb-1">{{contactUs?.title}}</h5>
+             <a href="javascript:void(0)" class="text-dark font-20">{{contactUs?.value}}</a>
+         </div>
+      </div>
+   </li>
+</ul>
+

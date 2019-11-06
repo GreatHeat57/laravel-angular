@@ -1,0 +1,14 @@
+<!-- About Author Layout -->
+<div class="testimonial-card card text-center">
+	<div class="card-up pb-5 pt-4 bg-warning">
+		<h4 class="text-white mb-4">About the Author</h4>
+	</div>
+	<div class="testimonial-user">
+	   <img src="{{aboutAuthor?.avatar}}" class="img-fluid rounded-circle" alt="testimonail user thumb" width="100" height="100" />
+	</div>
+	<div class="card-body">
+	    <h4>{{aboutAuthor?.name}}</h4>
+	    <div class="social-icons" angly-socials [socials]="socialDetails" [socialsClasses]="socialsClasses"></div>
+	    <p>{{aboutAuthor?.content}}</p>
+	</div>
+</div>

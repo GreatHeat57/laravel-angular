@@ -1,0 +1,6 @@
+<div class="mb-4">
+   <h4 class="sidebar-title mb-3">Social Share </h4>
+</div>
+<a *ngFor="let social of Socials" href="{{social?.url}}" class="btn btn-lg {{social?.bg_color}} text-white mx-1 mb-2">
+   <i class="fa {{social?.icon}} fa-lg"></i>
+</a>

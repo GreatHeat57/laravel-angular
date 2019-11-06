@@ -1,0 +1,32 @@
+<!-- Video Section -->
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 wow fadeIn animated" data-wow-duration="2s" data-wow-delay="3s">
+	<div class="">
+		<div class="section-title-wrapper mb-3">
+	   		<h2 class="mb-4">{{videoContent?.heading}}</h2>
+	   		<p class="mb-0">
+	      		{{videoContent?.short_content}}
+	   		</p>
+		</div>
+	   <ul class="list-unstyled m-md-b">
+	      <li class="mb-2 font-weight-bold" *ngFor="let details of videoContent?.content">
+	         <span class="mr-2 d-inline-block"><i class="fa fa fa-caret-right"></i></span>
+	         <span class="d-flex-inline align-top">{{details}}</span>
+	      </li>
+	   </ul>
+   </div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 wow fadeIn animated" data-wow-duration="2s" data-wow-delay="3s">
+	<div class="card border-0 text-white border-rad">
+	  	<img class="card-img img-fluid border-rad" src="assets/img/about-video.jpg" alt="Card image" width="319" height="479">
+		<div class="card-img-overlay black-tp-layer pos-center text-center border-rad">
+			<div class="center-holder">
+				<a data-fancybox href="{{videoContent?.video_link}}" class="play-button">
+					<i>
+						<span class="btn-text"><span>Play</span></span>	
+						<span class="btn-icon"><i class="fa fa-play"></i></span>
+					</i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

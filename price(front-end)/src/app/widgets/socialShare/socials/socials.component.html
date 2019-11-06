@@ -1,0 +1,7 @@
+<ul class="list-inline {{socialsClasses?.ulClass}}">
+	<li class="list-inline-item {{socialsClasses?.liClass}} mx-1" *ngFor="let social of socials">
+		<a class="{{socialsClasses?.linkClass}} font-lg mx-1" href="javascript:void(0);" >
+			<i class="fa {{social?.icon}}"></i>
+		</a>
+	</li>
+</ul>

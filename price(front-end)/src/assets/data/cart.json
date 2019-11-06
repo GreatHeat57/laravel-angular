@@ -1,0 +1,25 @@
+{
+   "data":[
+      {
+         "image":"assets/img/1.jpg",
+         "heading":"Printer",
+         "sub_title":"32GB with wifi",
+         "price":129,
+         "currency":"USD"
+      },
+      {
+         "image":"assets/img/2.jpg",
+         "heading":"Barcode Printer",
+         "sub_title":"32GB with wifi",
+         "price":129,
+         "currency":"USD"
+      },
+      {
+         "image":"assets/img/3.jpg",
+         "heading":"Barcode Printer",
+         "sub_title":"32GB with wifi",
+         "price":129,
+         "currency":"USD"
+      }
+   ]
+}

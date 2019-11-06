@@ -1,0 +1,75 @@
+
+{
+	"data":[
+      {
+         "avatar":"assets/img/1-team.jpg",
+         "heading": "The best app I ever used!",
+         "user_name":"Olivia Munn",
+         "classes":{
+            "colClass": "col-sm-12 col-md-6 col-lg-5 col-xl-5",
+            "bgClass": "bg-info"
+         },
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+         "avatar":"assets/img/2-team.jpg",
+         "heading": "New Update is Awesome!",
+         "user_name":"Ricky Morrison",
+         "classes":{
+            "colClass": "col-sm-12 col-md-6 col-lg-7 col-xl-7",
+            "bgClass": "bg-green"
+         },
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. it to make a type specimen book."
+      },
+      {
+         "avatar":"assets/img/3-team.jpg",
+         "heading": "Beautiful Desktop for Designers",
+         "user_name":"Susan Sherman",
+         "classes":{
+            "colClass": "col-sm-12 col-md-6 col-lg-6 col-xl-6",
+            "bgClass": "bg-warning"
+         },
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+         "avatar":"assets/img/2-team.jpg",
+         "heading": "Best App Ever",
+         "user_name":"Brandon Taylor",
+         "classes":{
+            "colClass": "col-sm-12 col-md-6 col-lg-6 col-xl-6",
+            "bgClass": "bg-success"
+         },
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+         "avatar":"assets/img/1-team.jpg",
+         "heading": "Put Movies On Iphone",
+         "user_name":"Jackson Ruiz",
+         "classes":{
+            "colClass": "col-sm-12 col-md-6 col-lg-4 col-xl-4",
+            "bgClass": "bg-danger"
+         },
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+         "avatar":"assets/img/3-team.jpg",
+         "heading": "Lcd Screen Work",
+         "user_name":"Earl Love",
+         "classes":{
+            "colClass": "col-sm-12 col-md-6 col-lg-4 col-xl-4",
+            "bgClass": "bg-yellow"
+         },
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+         "avatar":"assets/img/1-team.jpg",
+         "heading": "Powerball fever",
+         "user_name":"Earl Love",
+         "classes":{
+            "colClass": "col-sm-12 col-md-6 col-lg-4 col-xl-4",
+            "bgClass": "bg-primary"
+         },
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      }
+	]
+}

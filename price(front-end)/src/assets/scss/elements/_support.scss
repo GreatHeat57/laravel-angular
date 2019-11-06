@@ -1,0 +1,86 @@
+/*========= Support css ========*/
+.accordion-wrapper {
+    .card {
+        margin-bottom: 10px;
+        border-radius: 0;
+        .card-header {
+            padding: 0;
+            position: relative;
+            &[class*="bg-"] {
+                color: $white;
+            }
+            &:first-child {
+                border-radius: 0;
+            }
+            a {
+                padding: 20px 30px 20px 15px;
+                display: block;
+                font-size: 1.25rem;
+                color: inherit;
+            }
+        }
+    }
+}
+.accordion-toggle::after {
+    font-family: "FontAwesome";
+    font-size: 1.25rem;
+    position: absolute;
+}
+.basic-icon-accordion {
+    .card-header {
+        .accordion-toggle.collapsed::after {
+            content: "\f067";
+            border-radius: 0;
+        }
+        .accordion-toggle {
+            &::after {
+                content: "\f068";
+                right: 20px;
+                top: 20px;
+            }
+        }
+    }
+}
+.simple-line-accordion {
+  .card {
+    border: none;
+  }
+  .card-header {
+    .accordion-toggle.collapsed::after {
+      content: "\f105";
+      border-radius: 0;
+    }
+    .accordion-toggle {
+      &::after {
+        content: "\f107";
+        right: 20px;
+        top: 18px;
+      }
+    }
+  }
+  .card-body {
+    border-bottom: 1px solid $input-border-color;
+  }
+}
+//IE Support
+  @media all and (-ms-high-contrast:none)
+     {
+  
+     *::-ms-backdrop, .foo { color: red }
+     .card-deck, .team-list .card{
+        display: inherit !important; 
+    }
+    .post-section.section-gap .card-deck .card.border-0 a{
+        height: 100%;
+     }
+     .support-card .d-flex.align-items-center.d-xs-none,.product-wrapper .card.border-0.mb-3,.related-post .card.border-0.mb-4{
+        display: block !important; 
+     }
+    
+     .cart-widget .media{
+            width:300px;
+     }
+		  .pricing-section-3 .card-deck .card{
+			  margin-bottom: 1.5rem;
+		  }
+    }

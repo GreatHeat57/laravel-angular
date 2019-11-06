@@ -1,0 +1,291 @@
+/*========= Scaffolding ===========*/
+html {
+  font-size: $html-font-size !important;
+}
+@media(max-width:1366px) {
+  html {
+    font-size: $html-font-size - 1 !important;
+  }
+
+}
+@media(max-width:1280px) {
+  html {
+    font-size: $html-font-size - 1 !important;
+  }
+}
+@media(max-width:991px) {
+  html {
+    font-size: $html-font-size - 2 !important;
+  }
+}
+.z-index{
+    z-index: 9;
+}
+html,
+body {
+  width: 100%;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-size: $font-size-base;
+  background-color: $body-bg;
+  font-weight: $font-weight-normal;
+}
+[tabindex='-1']:focus {
+  outline: none;
+}
+.navbar.fixed-top{
+  position:fixed;
+}
+select,
+button,
+textarea,
+input {
+  vertical-align: baseline;
+}
+html,
+body {
+  &[dir=rtl],
+  &[dir=ltr] {
+    unicode-bidi: embed
+  }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    word-wrap: break-word;
+}
+h4 a,h5 a{
+	color: $headings-color !important;
+}
+
+bdo[dir=rtl] {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+bdo[dir=ltr] {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+}
+body{
+	line-height: 28px;
+}
+a{
+  cursor: pointer;
+  outline: 0;
+  &:hover{
+      cursor: pointer;
+  }
+}
+.btn{
+    cursor: pointer;
+}
+.border-rad {
+  border-radius: 1rem;
+}
+.border-rad-top {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+.border-rad-bottom {
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+.border-bottom {
+  @include border(1px solid, $gray-500, bottom);
+}
+.btn-pill {
+  border-radius: 2rem;
+}
+.btn-outline-light:hover {
+  color: $gray-700;
+}
+.card-shadow {
+  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+}
+.over-hidden {
+  overflow: hidden;
+}
+.section-heading {
+  margin-top: 6rem;
+}
+.border-bottom-dash {
+  @include border(3px dashed, $gray-500, bottom);
+}
+[class*="ion-ios-"] {
+  display: inline-block;
+}
+.form-control::placeholder {
+  color: #555555;
+  opacity: 1;
+}
+input, input::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 14px;
+}
+.shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+.shadow-md {
+  box-shadow: 0 10px 14px 0 rgba(0,0,0,0.12);
+}
+.shadow-lg {
+	box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+}
+.w-15 {
+	width: 15%;
+}
+.w-65 {
+	width: 65%;
+}
+.bg-primary, .bg-warning, .bg-green, .bg-yellow, .bg-success, .bg-info, .bg-dark, .bg-danger {
+  h1, h2, h3, h4, h5, h6, p {
+    color: $white;
+  }
+}
+/*=========== Common file css =============*/
+.black-tp-layer {
+  background-color: rgba(0, 0, 0, 0.50);
+}
+.black-layer-7 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.black-layer-8 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.warning-tp-layer {
+  @include background-opacity($orange, 0.7);
+}
+.primary-layer {
+  @include background-opacity($blue, 0.8);
+}
+.primary-tp-layer {
+  border-radius: 10px;
+  @include background-opacity($blue, 0.8);
+}
+.pos-relative {
+  position: relative;
+}
+.overlay-wrap {
+  position: relative;
+}
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.primary-tp-layer, .black-layer-7 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0s;
+}
+.overlay-wrap:hover {
+  .primary-tp-layer, .black-layer-7 {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 0s;
+    @extend .shadow-lg;
+  }
+}
+.pos-center {
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+.center-holder {
+  display: inline-block;
+  height: auto;
+  padding: 1.25rem;
+  vertical-align: middle;
+  width: 90%;
+}
+
+.invalid-feedback {
+  border: 2px solid $red;
+  margin-top: 0.35rem;
+  padding: 4px;
+}
+/*============ Map Responsive Css ===========*/
+.google-maps {
+    position: relative;
+    padding-bottom: 15%; // This is the aspect ratio
+ /*   height: 0;*/
+    overflow: hidden;
+}
+.gmap_canvas {
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+//Custom grid classes for lg to md
+@media (min-width:992px) and (max-width:1500px) {
+  .col-half-lg-down {
+    -moz-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-quad-lg-down {
+    -moz-box-flex: 0;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-full-lg-down {
+    -moz-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-12-lg-down{
+    -moz-box-flex: 0;
+    flex: 0 0 12%;
+    max-width: 12%;
+  }
+  .col-one-half-lg-down {
+    -moz-box-flex: 0;
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+}
+@media (min-width:768px) and (max-width:1199px) {
+  .container-full-width {
+    -moz-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .card-columns {
+    column-count: 2;
+  }
+}
+@media (max-width:768px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+ @media  (max-width: 1199px) {
+//   .p-5, .py-5, .px-5 {
+//     padding: 1.6rem !important;
+//   }
+.p-img {
+  width: 90px;
+  text-align: center;
+  margin: 0 auto;
+}
+}
+@media (max-width: 575px) {
+  .d-xs-none {
+    display: none !important;
+  }
+}
+

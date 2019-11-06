@@ -1,0 +1,72 @@
+<div class="contact-widget section-gap">
+	<div class="container">
+		<div class="row">
+	      	<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3 text-center">
+				<div class="contact-icon mb-4">
+					<i class="fa fa-phone text-warning fa-3x"></i>
+				</div>
+				<h4 class="text-warning mb-3"> Call Us </h4>
+				<div *ngFor="let phone of contact?.phone">
+					<h5 *ngIf="phone?.status == 1">
+						<a class="text-dark" href="tel:{{phone?.value}}">{{phone?.value}}</a>
+					</h5>
+				</div>
+	      	</div>
+			<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3 text-center">
+				<div class="contact-icon mb-4">
+				<i class="fa fa-envelope-o text-warning fa-3x"></i>
+				</div>
+				<h4 class="text-warning mb-3"> Send Us Mail </h4>
+				<div *ngFor="let email of contact?.email">
+					<h5 *ngIf="email?.status == 0">
+						<a class="text-dark" href="mailto:{{email?.value}}">{{email?.value}}</a>
+					</h5>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3 text-center">
+				<div class="contact-icon mb-4">
+				<i class="fa fa-comments text-warning fa-3x"></i>
+				</div>
+				<h5 class="text-warning mb-3"> Get Instant Help </h5>
+				<a href="javascript:void(0)" class="btn bg-green btn-sm"> Live Chat </a>
+			</div>
+	   </div>
+	</div>
+</div>
+<div class="contact-info">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-7">
+				<!-- Google Map -->
+				<div class="google-maps">
+					<div class="mapouter">
+					   <div class="gmap_canvas">
+					   	<agm-map [latitude]="lat" [longitude]="lng" class="border-rad">
+				            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+				        </agm-map>
+					   </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-5">
+				<div angly-sendMessage></div>
+			 </div>
+		 </div>
+	</div>
+</div>
+<div class="follow-us text-center section-gap">
+	<div class="container">
+		<div class="mb-5">
+			<h2> Follow Us</h2>
+		</div>
+		<div class="social-icon-widget">
+			<ul class="list-inline mb-0">
+				<li class="list-inline-item mx-2"><a href="javascript:void(0)" class="square-60 rounded-circle bg-facebook"><i class="fa fa-facebook fa-inverse"></i></a></li>
+				<li class="list-inline-item mx-2"><a href="javascript:void(0)" class="square-60 rounded-circle bg-twitter"><i class="fa fa-twitter fa-inverse"></i></a></li>
+				<li class="list-inline-item mx-2"><a href="javascript:void(0)" class="square-60 rounded-circle bg-google"><i class="fa fa-google-plus fa-inverse"></i></a></li>
+				<li class="list-inline-item mx-2"><a href="javascript:void(0)" class="square-60 rounded-circle bg-pinterest"><i class="fa fa-pinterest fa-inverse"></i></a></li>
+				<li class="list-inline-item mx-2"><a href="javascript:void(0)" class="square-60 rounded-circle bg-linked"><i class="fa fa-linkedin fa-inverse"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>

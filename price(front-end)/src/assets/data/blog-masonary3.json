@@ -1,0 +1,59 @@
+{
+	"data":[
+      {
+         "image_path": "assets/img/1-blog.jpg",
+         "heading": "Party Jokes Startling But Unnecessary",
+         "date":1500163200,
+         "user_name":"Jeff Robertson",
+         "mClass":"col-sm-6 col-md-4",
+         "avatar":"assets/img/1-team.jpg",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..."
+      },
+      {
+         "image_path": "assets/img/2-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "mClass":"col-sm-6 col-md-4",
+         "avatar":"",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.."
+      },
+      {
+         "image_path": "assets/img/3-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "mClass":"col-sm-6 col-md-4",
+         "avatar":"",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.."
+
+      },
+      {
+         "image_path": "assets/img/4-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "mClass":"col-sm-6 col-md-4",
+         "avatar":"",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+         "image_path": "assets/img/5-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "mClass":"col-sm-6 col-md-4",
+         "avatar":"",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      },
+      {
+         "image_path": "assets/img/6-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "mClass":"col-sm-6 col-md-4",
+         "avatar":"",
+         "content": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      }
+	]
+}

@@ -1,0 +1,30 @@
+/*========= Shop Css ==========*/
+.product-wrapper {
+	.card {
+		&:hover {
+			.cart-icon {
+				opacity: 1;
+  				transform: translateX(-15px);
+			}
+			.btn {
+				@extend .btn-primary;
+				@extend .submit-btn;
+			}
+			.overlay-wrap img {
+				box-shadow: 0 20px 80px rgba(0, 0, 0, 0.12);
+				transition: all 0.35s linear 0s;
+			}
+			h2 {
+				color: $blue;
+			}
+		}
+	}
+	.cart-icon {
+	  opacity: 0;
+	  position: absolute;
+	  right: 0;
+	  top: 10px;
+	  transform: translateX(0px);
+	  transition: all 0.4s linear 0s;
+	}
+}

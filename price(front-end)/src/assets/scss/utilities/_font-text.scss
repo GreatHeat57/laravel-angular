@@ -1,0 +1,68 @@
+//--- Font size ---//
+.font-xs{
+    font-size:$font-size-sm - 2 !important;
+}
+.font-lg { 
+    font-size: $font-size-lg; 
+}
+.font-sm { 
+    font-size: $font-size-sm !important; 
+}
+.font-md{
+    font-size: $font-size-lg + 2; 
+}
+.font-2x {
+    font-size: 2em; 
+}
+.font-3x {
+    font-size: 3em; 
+}
+.font-small{
+	font-size: 0.875rem;
+}
+.font-4x { 
+    font-size: 4em !important;
+}
+.font-5x { 
+    font-size: 5em;
+}
+.font-26 {
+    font-size: 1.625rem;
+}
+.font-20 {
+    font-size: 1.25rem;
+}
+//Font weight
+.fw-900 {
+    font-weight: 900;
+}
+.fw-800 {
+    font-weight: 800;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.fw-200 {
+    font-weight: 200;
+}
+.fw-100 {
+    font-weight: 100;
+}
+.opacity-07{
+	opacity: 0.7;
+}
+//Custom text-color
+@include text-emphasis-variant('.text-green', $cyan);
+@include text-emphasis-variant('.text-yellow', $yellow);

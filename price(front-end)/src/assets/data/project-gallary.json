@@ -1,0 +1,28 @@
+{
+   "data":[
+      {
+        "image_path":"./assets/img/1-project.jpg",
+        "type":"home"
+      },
+      {
+        "image_path":"./assets/img/2-project.jpg",
+        "type":"home"
+      },
+      {
+        "image_path":"./assets/img/3-project.jpg",
+        "type":"home"
+      },
+      {
+        "image_path":"./assets/img/4-project.jpg",
+        "type":"home"
+      },
+      {
+        "image_path":"./assets/img/5-project.jpg",
+        "type":"home"
+      },
+      {
+        "image_path":"./assets/img/6-project.jpg",
+        "type":"home"
+      }
+   ]
+}

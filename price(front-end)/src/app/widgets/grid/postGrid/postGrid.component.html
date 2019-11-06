@@ -1,0 +1,27 @@
+<!-- Posts grid -->
+<div class="col-sm-12 col-md-4 col-xl-4 mb-4" *ngFor="let content of postGridContent ? postGridContent.slice(0,3):[]">
+	<div class="card border-0 border-rad m-0">
+     <a href="#" routerLink="/blog-detail"><img class="border-rad-top img-fluid w-100" [src] ="content?.image_path" alt="Card image cap" width="370" height="253" /></a>
+		<div class="card-body px-4 pt-4 border-rad-bottom">
+			<h5 class="card-title mb-3"><a routerLink="/blog-detail">{{content?.title}}</a></h5>
+			<p class="card-text mb-4">{{content?.content}}</p>
+			<div class="card-footer pt-2 p-0">
+			  	<div class="d-flex justify-content-between">
+			  		<div class="d-flex align-content-start">
+			  			<a href="javascript:void(0);" class="text-muted">
+			  				<i class="fa {{content?.user_icon}} mr-1 font-lg"></i>
+			  				<span class="font-sm"> {{content?.user_name}}</span>
+			  			</a>
+			  		</div>
+			  		<div class="d-flex align-content-end">
+			  			<a href="javascript:void(0);" class="text-muted">
+			  				<i class="fa fa-calendar-o mr-2 font-lg"></i>
+			  				<span class="font-sm">{{content?.date*1000 | date }}</span>
+			  			</a>
+			  		</div>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,132 @@
+<div class="feature-wrapper">
+    <div class="feature-slide section-gap">
+        <div class="container" *ngIf="featuresContent?.feature_details">
+            <div class="row" >
+                <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
+                    <img [src] ="featuresContent?.feature_details?.image_path" width="367" height="367" class="img-fluid w-100" alt="feature images" />
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="feature-slide-content pt-3">
+                        <h2 class="font-2x mb-4">{{featuresContent?.feature_details?.heading}}</h2>
+                        <p class="mb-4 font-lg">{{featuresContent?.feature_details?.sub_heading}}</p>
+                        <ul class="list-unstyled">
+                            <li class="font-sm text-muted mb-3" *ngFor= "let featureList of featuresContent?.feature_details?.list">
+                                <i class="{{featureList?.icon}} mr-3"></i>
+                                {{featureList?.content}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- feature slide section -->
+    <div class="feature-work section-gap bg-light">
+        <div class="container" *ngIf="featuresContent?.features_work">
+            <div class="section-title-wrapper mb-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 mx-auto text-center">
+                        <h2>Design For You</h2>
+                        <p>
+                            This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3" *ngFor="let content of featuresContent?.features_work" >
+                    <div class="card-line-box  p-4">
+                        <div class="mb-4">
+                            <img [src] ="content?.image_path" class="img-fluid">
+                        </div>
+                        <h5 class="mb-3">{{content?.heading}}</h5>
+                        <p>{{content?.content}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--feature work section -->
+    <div class="skills-wrapper bg-black py-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <p class="text-white text-uppercase font-sm">PHOTOSHOP</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-green progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <p class="text-white text-uppercase font-sm">ILLUSTRATOR</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <p class="text-white text-uppercase font-sm">HTML</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-yellow progress-bar-striped progress-bar-animated" role="progressbar" style="width: 35%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- container closed -->
+    </div><!-- skills wrapper closed -->
+    <!-- Testimonial -->
+    <div class="testimonial-section section-gap">
+        <div class="">
+            <div class="container">
+                <div id="testimonial-1" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-7 mx-auto">
+                                <div class="carousel-item active text-center">
+                                    <h2 class="mb-5 text-white">“ Best in industry</h2>
+                                    <div class="testimonial-user mb-4">
+                                        <img src="assets/img/1-team.jpg" class="img-fluid rounded-circle" alt="testimonial user" width="100" height="100">
+                                    </div>
+                                    <div class="mb-4">
+                                        <h5 class="text-white">Jeremy Chavez</h5>
+                                        <span class="text-white opacity-07">Web Designer</span>
+                                    </div>
+                                    <p class="text-white text-center opacity-07">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <h2 class="mb-5 text-white">“ Service is awesome…</h2>
+                                    <div class="testimonial-user mb-4">
+                                        <img src="assets/img/2-team.jpg" class="img-fluid rounded-circle" alt="testimonial user" width="100" height="100">
+                                    </div>
+                                    <div class="mb-4">
+                                        <h5 class="text-white">Max Jhon</h5>
+                                        <span class="text-white opacity-07">Web Developer</span>
+                                    </div>
+                                    <p class="text-white text-center opacity-07">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <h2 class="mb-5 text-white">“ Great to work with</h2>
+                                    <div class="testimonial-user mb-4">
+                                        <img src="assets/img/3-team.jpg" class="img-fluid rounded-circle" alt="testimonial user" width="100" height="100">
+                                    </div>
+                                    <div class="mb-4">
+                                        <h5 class="text-white">Jacklin Chavez</h5>
+                                        <span class="text-white opacity-07">UI Designer</span>
+                                    </div>
+                                    <p class="text-white text-center opacity-07">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#testimonial-1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev" aria-hidden="true">
+                            <i class="ion-ios-arrow-dropleft-circle font-2x"></i>
+                        </span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonial-1" role="button" data-slide="next">
+                        <span class="carousel-control-next" aria-hidden="true">
+                            <i class="ion-ios-arrow-dropright-circle font-2x"></i>  
+                        </span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

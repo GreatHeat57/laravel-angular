@@ -1,0 +1,76 @@
+/*=============== Back to top arrow css ==============*/
+	 #back-top{
+        display: none !important;
+    }
+	@keyframes toTopIconFadeUp {
+	    0% {
+	        transform: translateY(0px);
+	    }
+	    50% {
+	        transform: translateY(-1.875rem);
+	    }
+	    51% {
+	        transform: translateY(1.875rem);
+	    }
+	    100% {
+	        transform: translateY(0px);
+	    }
+	}
+	
+	.to-top,
+	.to-top:visited,
+	.to-top:hover {
+	    background-color: $to-top-bg;
+	    border: 0.0625rem solid $to-top-border-color;
+	    border-radius: $to-top-border-radius;
+	    bottom: 2.75rem;
+	    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
+	    box-sizing: border-box;
+	    display: inline-block;
+	    height: 4rem;
+	    opacity: 0;
+	    overflow: hidden;
+	    position: fixed;
+	    right: 2.75rem;
+	    transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s, opacity 0.3s ease 0s;
+	    width: 4rem;
+	    z-index: 4;
+	    color: $to-top-icon-color;
+	}
+	
+	.to-top-icon::before {
+	    display: inline-block;
+	    height: 100%;
+	    transition: background 0.3s ease 0s;
+	    width: 100%;
+	    content: "";
+	    font-family: 'FontAwesome';
+	    line-height: 60px;
+	    text-align: center;
+	}
+	
+	.to-top:hover {
+	    background: $to-top-icon-color;
+	    border-width: 0.125rem;
+	    box-shadow: none;
+	}
+	
+	.to-top:hover .to-top-icon::before {
+	    animation: 0.6s ease-in-out 0s normal none 1 running toTopIconFadeUp;
+	    height: 100%;
+	    transition: background 0.3s ease 0s;
+	    width: 100%;
+	    content: "";
+	    font-family: 'FontAwesome';
+	    line-height: 60px;
+	    text-align: center;
+	    color: $to-top-icon-hover-color;
+	}
+	
+	.to-top.scrolled,
+	.to-top.scrolled:visited,
+	.to-top.scrolled:hover {
+	    opacity: 1;
+	}
+
+

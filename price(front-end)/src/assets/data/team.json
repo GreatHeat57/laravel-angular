@@ -1,0 +1,52 @@
+{
+  "data":[
+    {
+      "image_path":"./assets/img/1-team.jpg",
+      "name":"Jeremy Chavez",
+      "type":"Web Designer",
+      "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+      "image_path":"./assets/img/2-team.jpg",
+      "name":"James",
+      "type":"Developer",
+      "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+      "image_path":"./assets/img/3-team.jpg",
+      "name":"Eula Saunders",
+      "type":"Web Designer",
+      "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+      "image_path":"./assets/img/1-team.jpg",
+      "name":"Max",
+      "type":"Developer",
+      "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+      "image_path":"./assets/img/2-team.jpg",
+      "name":"Max",
+      "type":"Developer",
+      "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+      "image_path":"./assets/img/3-team.jpg",
+      "name":"Max",
+      "type":"Developer",
+      "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+      "image_path":"./assets/img/1-team.jpg",
+      "name":"Max",
+      "type":"Developer",
+      "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+      "image_path":"./assets/img/2-team.jpg",
+      "name":"Max",
+      "type":"Developer",
+      "content":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    }
+  ]
+}

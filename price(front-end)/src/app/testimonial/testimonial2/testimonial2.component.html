@@ -1,0 +1,21 @@
+<!-- Testimonial Wrapper -->
+<div class="testimonial-wrapper section-gap">
+   <div class="container">
+      <div class="row">
+         <div *ngFor="let user of testimonialV2" class="{{user?.classes?.colClass}}">
+            <div class="card-container mb-4">
+               <div class="card border-0 border-rad {{user?.classes?.bgClass}}">
+                  <div class="card-body p-4">
+                     <img [src]="user?.avatar" class="rounded-circle shadow-md mb-3" width="60" height="60" alt="testimonial user thumb" />
+                     <div class="mb-3">
+                        <h4 class="mb-2"><a href="javascript:void(0);" class="text-white">{{user?.heading}}</a></h4>
+                        <h5>{{user?.user_name}}</h5>
+                     </div>
+                     <p class="font-italic">{{user?.content}}</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,124 @@
+/*========= Contact css =========*/
+.contact-icon {
+  display: inline-block;
+  height: 70px;
+  vertical-align: middle;
+  width: 100%;
+}
+/*======= Session css ===========*/
+.session-wrapper {
+	padding: 15rem 0 5rem;
+  margin-bottom:3rem;
+	// background-color: $gray-300;
+	.card-text {
+		line-height: 1.2;
+	}
+}
+.social-widget li a {
+  border-radius: 4px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.social-without-bg {
+  ul {
+    li {
+      font-size: 1.563rem;
+      margin: 0 10px;
+      a {
+        color: $gray-700;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+.border-style {
+  &:after, &:before {
+    display: inline-block;
+    margin: 0 0 4px 10px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: $gray-500;
+    width: 100px;
+  }
+  &:before {
+    margin: 0 10px 4px 0;
+  }
+}
+.ty-card-title {
+  font-size: 3.5rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 36%;
+  color: $white;
+}
+.card-hover {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 15rem;
+}
+.thankyou-wrap{
+  position: relative;
+ .card-hover {
+    margin-top: -95px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: inherit;
+    left: auto;
+    right: auto;
+    top: auto;
+  }
+}
+.under-maintenance {
+  background: url("../../assets/img/under-maintenance.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  padding: 15rem 0rem;
+  width: 100%;
+  position: relative;
+  top: 0;
+  overflow:auto;
+  background-attachment:fixed;
+  bottom: 0;
+}
+.arrow-bottom:after,
+.arrow-bottom:after {
+  z-index: 9;
+  position: absolute;
+  top: 98.1%;
+  left: 29%;
+  margin-left: -25%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: solid 35px $white;
+  border-left: solid 35px transparent;
+  border-right: solid 35px transparent;
+}
+/*====== Responsive ========*/
+
+@media(max-width:768px){
+  .thankyou-wrap .card-hover {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width:400px) {
+  .under-maintenance {
+    padding: 8rem 0rem;
+    .display-1 {
+      font-size: 4rem
+    }
+    .font-3x {
+      font-size: 2rem;
+    }
+  }
+  .thankyou-wrap .card-hover {
+    margin-top: -15px;
+  
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "data":[
+    {
+      "title":"Stater Plan",
+      "home_title":"Single User",
+      "bg_color":"bg-primary",
+      "price": 35,
+      "currency": "$",
+      "price_type": "month",
+      "pricing_list":[
+        {"icon":"fa-check text-success", "value":"Up to 10 users monthly"},
+        {"icon":"fa-check text-success", "value":"Unlimited updates"},
+        {"icon":"fa-close text-danger", "value":"Free host & domain"},
+        {"icon":"fa-close text-danger", "value":"Support 24 / 7"}
+      ],
+      "url":""
+    },
+    {
+      "title":"Silver Plan",
+      "home_title":"Small Company",
+      "bg_color":"bg-success",
+      "price": 65,
+      "currency": "$",
+      "price_type": "month",
+      "pricing_list":[
+        {"icon":"fa-check text-success", "value":"Up to 20 users monthly"},
+        {"icon":"fa-check text-success", "value":"Unlimited updates"},
+        {"icon":"fa-close text-success", "value":"Free host & domain"},
+        {"icon":"fa-close text-danger", "value":"Support 24 / 7"}
+      ],
+      "url":""
+    },
+    {
+      "title":"Glod Plan",
+      "home_title":"Large Company",
+      "bg_color":"bg-warning",
+      "price": 95,
+      "currency": "$",
+      "price_type": "month",
+      "pricing_list":[
+        {"icon":"fa-check text-success", "value":"Unlimited users"},
+        {"icon":"fa-check text-success", "value":"Unlimited updates"},
+        {"icon":"fa-close text-success", "value":"Free host & domain"},
+        {"icon":"fa-close text-success", "value":"Support 24 / 7"}
+      ],
+      "url":""
+    }
+  ]
+}

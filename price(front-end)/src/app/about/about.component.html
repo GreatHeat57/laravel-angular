@@ -1,0 +1,172 @@
+<!-- Video section -->
+<div class="about-video pt-6">
+    <div class="container">
+       	<div class="row">
+			<div class="col-sm-12 col-md-10 mx-auto">
+				<div class="card border-0 shadow-md text-white border-rad">
+				   <img class="card-img img-fluid border-rad" src="assets/img/about-us.jpg" alt="Card image" width="319" height="300">
+				   	<div class="card-img-overlay black-tp-layer pos-center text-center border-rad">
+				      	<div class="center-holder">
+                     <a data-fancybox href="https://www.youtube.com/watch?v=hw2smSOJIv4" class="play-button">
+								<i>
+									<span class="btn-text"><span>Play</span></span> 
+									<span class="btn-icon"><i class="fa fa-play"></i></span>
+								</i>
+							</a>
+				      	</div>
+				   	</div>
+				</div>
+			</div>
+      	</div>
+    </div>
+</div>
+<!-- Service grid -->
+<div class="service section-gap pt-5">
+    <div class="container">
+      <div class="row" angly-serviceGrid [serviceGridContent]="services"></div>
+    </div>
+</div>
+<!-- Our Goles and mission  -->
+<div class="our-mission bg-light section-gap">
+   <div class="container">
+      <div class="blog-alternate mb-5" *ngFor="let content of about">
+         <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-7">
+               <div class="overlay-wrap">
+                  <img [src]="content?.image_path" width="370" height="300" alt="about-img" class="img-fluid w-100 border-rad shadow-md" />
+                  <div class="card-img-overlay primary-tp-layer pos-center text-center">
+                     <div class="center-holder">
+                        <a href="javascript:void(0)" class="ih-fade-right"><i class="fa fa-arrow-right fa-3x fa-inverse"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-5">
+               <div class="about-content py-5 px-4">
+                  <div class="mb-3">
+                     <h2 class="font-2x m-0">{{content?.heading}}</h2>
+                  </div>
+                  <p>
+                     {{content?.content}}
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Team grid -->
+<div class="team section-gap">
+	<div class="container">
+		<div class="section-title-wrapper mb-5">
+			<div class="row">
+				<div class="col-sm-12 col-md-9 mx-auto text-center">
+					<h2 class="font-2x mb-3"> Meet Our Team </h2>
+					<p>Our creative specialists work on an international level at branding, design and development. Both online and offline.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div  class="col-sm-12 col-md-4 m-sm-b" *ngFor="let content of team ? team.slice(0,3):[]">
+				<div class="card border-0 text-center">
+					<div class="overlay-wrap mb-4">
+						<img class="img-fluid rounded-circle shadow-md" [src] ="content?.image_path" alt="Card image cap" width="170" height="170" />
+					</div>
+					<div class="card-body p-0">
+						<h5 class="card-title mb-2">{{content?.name}}</h5>
+						<span class="text-primary d-block font-italic mb-3">{{content?.type}}</span>
+						<p class="card-text mb-4">{{content?.content}}</p>
+						<div class="social-icons" angly-socials [socials]="socialDetails" [socialsClasses]="socialsClasses">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Testimonial -->
+<div class="testimonial-section section-gap">
+   <div class="">
+      <div class="container">
+         <div id="testimonial-2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="row">
+                  <div class="col-sm-12 col-md-7 mx-auto">
+                     <div class="carousel-item active text-center">
+                        <h2 class="mb-5 text-white">“Simply love it…</h2>
+                        <div class="testimonial-user mb-4">
+                           <img src="assets/img/1-team.jpg" class="img-fluid rounded-circle" alt="testimonial user" width="100" height="100">
+                        </div>
+                        <div class="mb-4">
+									<h5 class="text-white">Jeremy Chavez</h5>
+									<span class="text-white opacity-07">Web Designer</span>
+                        </div>
+                        <p class="text-white text-center opacity-07">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+                     </div>
+                     <div class="carousel-item text-center">
+                        <h2 class="mb-5 text-white">“ Best theme …</h2>
+                        <div class="testimonial-user mb-4">
+                           <img src="assets/img/1-team.jpg" class="img-fluid rounded-circle" alt="testimonial user" width="100" height="100">
+                        </div>
+                        <div class="mb-4">
+									<h5 class="text-white">Max Jhon</h5>
+									<span class="text-white opacity-07">Web Developer</span>
+                        </div>
+                        <p class="text-white text-center opacity-07">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+                     </div>
+                     <div class="carousel-item text-center">
+                        <h2 class="mb-5 text-white">“ Love support system …</h2>
+                        <div class="testimonial-user mb-4">
+                           <img src="assets/img/1-team.jpg" class="img-fluid rounded-circle" alt="testimonial user" width="100" height="100">
+                        </div>
+                        <div class="mb-4">
+									<h5 class="text-white">Jacklin Chavez</h5>
+									<span class="text-white opacity-07">UI Designer</span>
+                        </div>
+                        <p class="text-white text-center opacity-07">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonial-2" role="button" data-slide="prev">
+	            <span class="carousel-control-prev" aria-hidden="true">
+	            	<i class="ion-ios-arrow-dropleft-circle font-2x"></i>
+	            </span>
+	            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial-2" role="button" data-slide="next">
+	            <span class="carousel-control-next" aria-hidden="true">
+	            	<i class="ion-ios-arrow-dropright-circle font-2x"></i>  
+	            </span>
+	            <span class="sr-only">Next</span>
+            </a>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Contact information section -->
+<div class="contact-section py-6">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12 col-md-9 mx-auto text-center">
+            <div class="mb-5">
+               <h2 class="font-2x"> Contact Information </h2>
+            </div>
+         </div>
+      </div>
+      <div class="row" angly-homeContact [contact]="contact"></div>
+   </div>
+</div>
+<!-- Send message section -->
+<div class="send-msg style-form">
+   <div class="py-6">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12 col-md-10 col-lg-7 mx-auto">
+               <div angly-sendMessage></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+

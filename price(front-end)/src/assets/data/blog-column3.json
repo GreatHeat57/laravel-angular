@@ -1,0 +1,64 @@
+{
+	"data":[
+      {
+         "image_path": "assets/img/1-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "user_icon":"fa-user-circle-o",
+         "content": "Quisque et tincidunt ex, ut mollis ante. Vestibulum vulputate eget nulla sed tincidunt. Nam euismod sem...",
+         "read_more_url": "javascript:void(0);",
+			"read_more_bgcolor":"bg-primary"
+      },
+      {
+         "image_path": "assets/img/2-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "user_icon":"fa-user-circle-o",
+         "content": "Quisque et tincidunt ex, ut mollis ante. Vestibulum vulputate eget nulla sed tincidunt. Nam euismod sem...",
+         "read_more_url": "javascript:void(0);",
+			"read_more_bgcolor":""
+      },
+      {
+         "image_path": "assets/img/3-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "user_icon":"fa-user-circle-o",
+         "content": "Quisque et tincidunt ex, ut mollis ante. Vestibulum vulputate eget nulla sed tincidunt. Nam euismod sem...",
+         "read_more_url": "javascript:void(0);",
+			"read_more_bgcolor":""
+      },
+      {
+         "image_path": "assets/img/4-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "user_icon":"fa-user-circle-o",
+         "content": "Quisque et tincidunt ex, ut mollis ante. Vestibulum vulputate eget nulla sed tincidunt. Nam euismod sem...",
+         "read_more_url": "javascript:void(0);",
+			"read_more_bgcolor":""
+      },
+      {
+         "image_path": "assets/img/5-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "user_icon":"fa-user-circle-o",
+         "content": "Quisque et tincidunt ex, ut mollis ante. Vestibulum vulputate eget nulla sed tincidunt. Nam euismod sem...",
+         "read_more_url": "javascript:void(0);",
+			"read_more_bgcolor":""
+      },
+      {
+         "image_path": "assets/img/6-blog.jpg",
+         "heading": "The new version is now live!",
+         "date":1500163200,
+         "user_name":"Admin",
+         "user_icon":"fa-user-circle-o",
+         "content": "Quisque et tincidunt ex, ut mollis ante. Vestibulum vulputate eget nulla sed tincidunt. Nam euismod sem...",
+         "read_more_url": "javascript:void(0);",
+			"read_more_bgcolor":""
+      }
+	]
+}

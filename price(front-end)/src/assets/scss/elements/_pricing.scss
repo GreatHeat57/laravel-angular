@@ -1,0 +1,29 @@
+/*========== Pricing css ==========*/
+.pricing-section-1 {
+	.card {
+		transition: all 0.5s ease 0s;
+	}
+	.card.active, .card:hover {
+		background-color: $blue;
+		color: $white;
+		@extend .shadow-md;
+		transition: all 0.5s ease 0s;
+		h2 {
+			color: $white;
+		}
+		.btn {
+			background: $yellow;
+			color: $black;
+			border-color: $yellow;
+		}
+	}
+}
+
+.pricing-section-3 {
+  background: url("../../assets/img/testimonial.jpg");
+  background-position: center center;
+  background-attachment:fixed;
+  .black-tp-layer {
+    padding: 7rem 0;
+  }
+}

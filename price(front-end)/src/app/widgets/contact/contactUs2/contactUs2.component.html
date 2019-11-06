@@ -1,0 +1,27 @@
+<!-- Contact Us 2 Widget -->
+<div class="mb-4">
+  <h4 class="sidebar-title mb-3">Contact Us 2</h4>
+</div>
+<div class="mb-4">
+   <!-- Google Map -->
+   <div class="google-maps">
+     <div class="mapouter">
+        <div class="gmap_canvas">
+         <agm-map [latitude]="lat" [longitude]="lng" class="border-rad">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+         </agm-map>
+        </div>
+     </div>
+   </div>
+</div>
+<ul class="list-unstyled">
+  <li *ngFor="let contactUs of contact" class="d-flex justify-content-start mb-2">
+    	<span class="d-flex align-items-start">
+    		{{contactUs?.heading}}
+    	</span> 
+    	<span class="mx-3">: </span>
+    	<a href="javascript:void(0)" class="d-flex align-items-start text-dark">
+    		{{contactUs?.value}}
+    	</a>
+  </li>
+</ul>

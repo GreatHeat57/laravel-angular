@@ -1,0 +1,23 @@
+<!-- Portfolio Gallery -->
+<div class="{{gridClass}}" *ngFor="let content of gallaryGridContent ? gallaryGridContent.slice(0,6):[]">
+   <div class="overlay-wrap" *ngIf="content?.type == 'home'">
+      <img [src] ="content.image_path" width="367" height="367" class="img-fluid w-100" alt="gallery images" />
+      <a href="{{content.image_path}}" data-fancybox="images" class="card-img-overlay primary-tp-layer pos-center text-center">
+         <span class="center-holder">
+            <a class="ih-fade-down square-40 rounded-circle bg-white shadow-md">
+               <i class="fa fa-plus align-middle"></i>
+            </a>
+         </span>
+      </a>
+   </div>
+   <div class="grid-item pos-relative" *ngIf="content?.type != 'home'">
+      <div class="single-portfolio">
+         <img [src] ="content.image_path" width="367" height="367" class="img-fluid w-100" alt="gallery images" />
+      </div>
+      <div class="hover-details">
+         <a href="javascript:void(0)" title="Judge Me Portfolio">
+            <i class="fa fa-camera"></i>
+         </a>
+      </div>
+   </div>
+</div>

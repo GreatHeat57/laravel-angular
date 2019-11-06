@@ -1,0 +1,52 @@
+{
+	"data":[
+		{
+			"btnBgClass": "btn-primary",
+			"value":"Angular2"
+		},
+		{
+			"btnBgClass": "bg-green",
+			"value":"HTML"
+		},
+		{
+			"btnBgClass": "btn-dark",
+			"value":"SCSS"
+		},
+		{
+			"btnBgClass": "btn-warning",
+			"value":"Admin"
+		},
+		{
+			"btnBgClass": "btn-success",
+			"value":"Garden"
+		},
+		{
+			"btnBgClass": "btn-danger",
+			"value":"Photography"
+		},
+		{
+			"btnBgClass": "bg-yellow",
+			"value":"City"
+		},
+		{
+			"btnBgClass": "btn-info",
+			"value":"Admin"
+		},
+		{
+			"btnBgClass": "bg-green",
+			"value":"Wordpress"
+		},
+		{
+			"btnBgClass": "btn-warning",
+			"value":"Fashion"
+		},
+		{
+			"btnBgClass": "btn-success",
+			"value":"Graphics"
+		},
+		{
+			"btnBgClass": "btn-primary",
+			"value":"Love"
+		}
+	]
+}

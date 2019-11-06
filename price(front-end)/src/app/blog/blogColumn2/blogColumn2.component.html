@@ -1,0 +1,194 @@
+<!-- Latest Blog Section -->
+<div class="blog-wrapper section-gap" style="background-color: #f6f6f6;">
+   <div class="container-fluid" style="background-color: #f6f6f6;">
+      <div class="col-md-12 col-xl-10 col-sm-12 mx-auto" style="background-color:white; box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);">
+         <div class="row">
+            <div class="col-md-10 col-sm-12">
+               <ul class="list-group list-group-horizontal">
+                  <li class="list-group-item" *ngFor="let category of categories">
+                     <a (click)="SelCategory(category.id)" *ngIf="category.id == categoryId" class="active">{{category.name}}</a>
+                     <a (click)="SelCategory(category.id)" *ngIf="category.id != categoryId">{{category.name}}</a>
+                  </li>
+               </ul>
+               <hr class="mb-4 mt-1">
+            </div>
+         </div>
+         <div class="row" style="padding: 0 15px;">
+            <div class="col-md-3 col-sm-12">
+               <div class="mat-card card-primary">
+                  <div class="mat-card-header">
+                     <h3 class="mat-card-title">Search</h3>
+                     <a href="javascript:void(0);" class="text-muted" style="float: right;" title="Sort Price" (click)="SetSortPrice()">
+                        <i class="fa-eur fa text-white font-lg mr-2"></i>
+                     </a>
+                  </div>
+                  <form [formGroup]="searchForm" class="form" id="form-feed-config">
+                     <div class="mat-card-content">
+                        <div class="form-group" *ngFor="let searchItem of searchItems">
+                           <!-- input  -->
+                           <mat-form-field class='col-12' *ngIf="searchItem.field_name=='title' || searchItem.field_name=='star' || searchItem.field_name=='rating' || searchItem.field_name=='travel_type'">
+                              <input formControlName="{{searchItem.field_name}}" class='col-12' matInput placeholder="{{searchItem.text}}">
+                           </mat-form-field>
+                           <!-- number range -->
+                           <div formGroupName="{{searchItem.field_name}}" *ngIf="searchItem.field_name=='price' || searchItem.field_name=='duration' || searchItem.field_name=='num_person' || searchItem.field_name=='num_offer' || searchItem.field_name=='latitude' || searchItem.field_name=='longitude'">
+                              <mat-form-field class="example-ripple-form-field col-5">
+                                 <input matInput type="number" placeholder="{{searchItem.text}} min" formControlName="min">
+                              </mat-form-field>
+                              <mat-label class="example-ripple-form-field col-1">~</mat-label>
+                              <mat-form-field class="example-ripple-form-field col-5">
+                                 <input matInput type="number" placeholder="{{searchItem.text}} max" formControlName="max">
+                              </mat-form-field>
+                           </div>
+                           <!-- select -->
+                           <!-- location select -->
+                           <mat-form-field class='col-12'
+                             *ngIf="searchItem.field_name=='country' || searchItem.field_name=='region' || searchItem.field_name=='city'">
+                             <mat-label>{{searchItem.text}}</mat-label>
+                             <mat-select formControlName="{{searchItem.field_name}}" (selectionChange)="getLocationItems($event, searchItem.field_name)">
+                               <mat-option value="" selected>All</mat-option>
+                               <mat-option *ngFor="let option of LocationData[searchItem.field_name]" [value]="option[searchItem.field_name]">
+                                 {{option[searchItem.field_name]}}</mat-option>
+                             </mat-select>
+                           </mat-form-field>
+                           <!-- general select -->
+                           <mat-form-field class='col-12' *ngIf="searchItem.field_name=='service_type' || searchItem.field_name=='allinclusive' || searchItem.field_name=='option1' || 
+                                                                  searchItem.field_name=='option2' || searchItem.field_name=='option3' || searchItem.field_name=='option4' || searchItem.field_name=='option5'">
+                              <mat-label>{{searchItem.text}}</mat-label>
+                              <mat-select formControlName="{{searchItem.field_name}}">
+                                 <mat-option value="" selected>All</mat-option>
+                                 <mat-option *ngFor="let option of searchItem.value" [value]="option[searchItem.field_name]">
+                                    {{option[searchItem.field_name]}}</mat-option>
+                              </mat-select>
+                           </mat-form-field>
+                        </div>
+                     </div>
+                     <div class="mat-card-actions">
+                        <button mat-raised-button color="primary" class="mx-auto" (click)="startSearch()">Search</button>
+                        <button mat-raised-button color="accent" class="ml-3" (click)="SearchAll()">Search All</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="col-md-9 col-sm-12">
+               <div class="row">
+                  <nav class="col-md-12 col-sm-12 mx-auto">
+                     <ul class="pagination">
+                        <li><a aria-label="End" title="1" (click)="makePagination(1)"><span aria-hidden="true"><i class="fa fa-fast-backward" aria-hidden="true"></i></span></a></li>
+                        <li><a aria-label="Next" title="{{paginationState['prev']}}" (click)="makePagination(paginationState['prev'])"><span aria-hidden="true"><i class="fa fa-backward" aria-hidden="true"></i></span></a></li>
+
+                        <li *ngFor="let paginum of paginationData">
+                           <a *ngIf="paginationState['current']==paginum.value" class="active" aria-label="Next" title="{{paginum.value}}"><span aria-hidden="true">{{paginum.text}}</span></a>
+                           <a *ngIf="paginationState['current']!=paginum.value" aria-label="Next" title="{{paginum.value}}" (click)="makePagination(paginum.value)"><span aria-hidden="true">{{paginum.text}}</span></a>
+                        </li>
+                        
+                        <li><a aria-label="Next" title="{{paginationState['next']}}" (click)="makePagination(paginationState['next'])"><span aria-hidden="true"><i class="fa fa-forward" aria-hidden="true"></i></span></a></li>
+                        <li><a aria-label="End" title="{{paginationState['end']}}" (click)="makePagination(paginationState['end'])"><span aria-hidden="true"><i class="fa fa-fast-forward" aria-hidden="true"></i></span></a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="row">
+                  <div class="col-sm-12 col-md-12 mb-12" *ngFor="let serviceData of serviceDatas">
+                     <div class="blog-wrap mb-4 row feed-blog">
+                        <div class="overlay-wrap mb-4 col-md-5 col-sm-12">
+                           <img [src]="serviceData.image[0]" alt="blog-img" width="572" height="391"
+                              class="img-fluid w-100 border-rad" />
+                           <div class="card-img-overlay primary-tp-layer pos-center text-center">
+                              <div class="center-holder">
+                                 <a href="{{serviceData.buy_link}}" target="_blank" class="ih-fade-right"><i
+                                       class="fa fa-arrow-right fa-3x fa-inverse"></i></a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="blog-content col-md-5 col-sm-12">
+                           <!-- title -->
+                           <h4 class="mb-3"><a routerLink="/blog-detail">{{serviceData.title}}</a></h4>
+                           <!-- stars -->
+                           <div class="blog-meta mb-1">
+                              <a href="javascript:void(0);" class="mr-3 text-muted" *ngIf="serviceData.stars==1">
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <!-- <i class="fas fa-star mr-2"></i> -->
+                              </a>
+                              <a href="javascript:void(0);" class="mr-3 text-muted" *ngIf="serviceData.stars==2">
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <!-- <i class="fas fa-star mr-2"></i> -->
+                              </a>
+                              <a href="javascript:void(0);" class="mr-3 text-muted" *ngIf="serviceData.stars==3">
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <!-- <i class="fas fa-star mr-2"></i> -->
+                              </a>
+                              <a href="javascript:void(0);" class="mr-3 text-muted" *ngIf="serviceData.stars==4">
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <!-- <i class="fas fa-star mr-2"></i> -->
+                              </a>
+                              <a href="javascript:void(0);" class="mr-3 text-muted" *ngIf="serviceData.stars==5">
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <i class="fa-star fa text-primary mr-1 font-lg"></i>
+                                 <!-- <i class="fas fa-star mr-2"></i> -->
+                              </a>
+                           </div>
+                           <!-- country, city, region -->
+                           <div class="blog-categories mb-3 font-sm">
+                              <p class="mb-0 d-inline-block mr-2">Location:</p>
+                              <div class="categories-tag d-inline-block">
+                                 <a href="javascript:void(0);">{{serviceData.country}},</a>
+                                 <a href="javascript:void(0);">{{serviceData.region}},</a>
+                                 <a href="javascript:void(0);">{{serviceData.city}},</a>
+                              </div>
+                           </div>
+                           <!-- description -->
+                           <p class="mb-3 dec-feed">{{serviceData.descript}}</p>
+                        </div>
+
+                        <div class="blog-content col-md-2 col-sm-12">
+                           <!-- travelType -->
+                           <p class="travel-type">
+                              <span class="categories-tag d-block text-right">
+                                 <a href="javascript:void(0);" class="tran-icon"><i class="fa fa-plane" aria-hidden="true"></i></a>
+                                 <a href="javascript:void(0);" class="tran-icon"><i class="fa fa-plus" style="padding: 0 10px; font-size: 24px;" aria-hidden="true"></i></a>
+                                 <a href="javascript:void(0);" class="tran-icon"><i class="fa fa-bus" aria-hidden="true"></i></a>
+                              </span>
+                              <span class="categories-tag d-block text-right">
+                                 <a href="javascript:void(0);"><i class="fa fa-paw" aria-hidden="true"></i></a>&nbsp;
+                                 <a href="javascript:void(0);"><i class="fa fa-wifi" aria-hidden="true"></i></a>&nbsp;
+                              </span>
+                           </p>
+
+                           <!-- price -->
+                           <p class="price-ctn">
+                              <span><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Price per person</span>
+                              <a href="javascript:void(0);" class="">
+                                 <i class="fa-eur fa text-primary font-lg mr-2 price-unit"></i>
+                                 <span class="font-lg text-primary price-num">{{serviceData.price}}</span>
+                              </a>
+                           </p>
+                           <p>
+                              <!-- read more link -->
+                              <a routerLink="/blog-detail/{{serviceData.id}}" class="btn-warning float-right btn btn-sm"> READ MORE </a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="my-container">
+     <ng-template #customLoadingTemplate>
+
+     </ng-template>
+
+     <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate">
+     </ngx-loading>
+   </div>
+</div>

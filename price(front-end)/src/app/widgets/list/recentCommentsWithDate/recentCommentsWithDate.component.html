@@ -1,0 +1,11 @@
+<div class="mb-4">
+	<h4 class="sidebar-title mb-3">Recent Comments </h4>
+</div>
+<ul class="list-unstyled">
+   <li *ngFor="let comments of recentComments" class="border-bottom py-2">
+		<a href="javascript:void(0)" class="mb-2 d-inline-block">{{comments?.content}}</a>
+      	<p class="text-muted small m-0">
+      		<span>{{comments?.date*1000 | date }}</span>at<span>{{comments?.date*1000 | date:"HH:mm" }}</span>
+      	</p>
+   </li>
+</ul>

@@ -1,0 +1,202 @@
+//Basics bg classes color text fonts
+.bg-primary,
+.bg-success,
+.bg-inverse,
+.bg-info,
+.bg-warning,
+.bg-danger,
+.bg-green,
+.bg-yellow {
+    color: $white!important;
+}
+
+.bg-grey {
+    color: $gray-800;
+}
+
+
+//Font size in responsive
+html {
+    font-size: $font-size-base;
+}
+
+
+@media(max-width:1366px) {
+    html {
+        font-size: $font-size-base - 1;
+    }
+}
+
+@media(max-width:1280px) {
+    html {
+        font-size: $font-size-base - 1;
+    }
+}
+
+@media(max-width:991px) {
+    html {
+        font-size: $font-size-base - 2;
+    }
+}
+
+//List style
+.list-item-border {
+    li {
+        border-bottom: 1px solid $input-border-color;
+    }
+}
+
+.list-item-space {
+    li {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+//Space Bottom for max .md class
+.pb-md-1 {
+    padding-bottom: 0.3rem;
+}
+
+.pb-md-2 {
+    padding-bottom: 0.6rem;
+}
+
+.pb-md-3 {
+    padding-bottom: 1.2rem;
+}
+
+.pb-md-4 {
+    padding-bottom: 1.8rem;
+}
+
+.pb-md-5 {
+    padding-bottom: 3.6rem;
+}
+
+// angly Mat Card style
+.angly-card-inner,
+.flex-align {
+    align-items: center;
+}
+
+.flex-align-top {
+    align-items: flex-start;
+}
+
+.angly-card-footer,
+.angly-card-title {
+    .mat-icon-button {
+        height: 2.188rem;
+        line-height: 1.1;
+        width: 2.188rem;
+        margin: 0;
+        color: #868E96;
+        font-size: 0.875rem;
+    }
+}
+
+.angly-card-content-sm {
+    padding: 0.5rem 0 0;
+}
+
+.angly-card-content {
+    padding: 1.3rem 0 1rem 0;
+}
+
+.angly-card-footer {
+    .mat-divider {
+        padding: 0.3em
+    }
+}
+
+// List 
+.angly-list {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    >li {
+        margin-bottom: 1rem;
+    }
+}
+
+// Helper classes
+.box-inset {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3) inset;
+}
+
+.angly-span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.angly-block {
+    display: block;
+}
+
+.shadow-none {
+    box-shadow: none!important;
+}
+
+.background-none {
+    background-color: transparent!important;
+}
+.style-form{
+	label{
+		opacity: 0.7;
+		color: $white;
+	}	
+	h2{
+		color: $white;
+margin-bottom:3rem;
+	}
+    .card-shadow{
+        box-shadow:none;
+        padding:0 !important;
+    }
+}
+
+//Custom grid classes for lg to md
+@media (min-width:992px) and (max-width:1500px) {
+    .col-half-lg-down {
+        -moz-box-flex: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-quad-lg-down {
+        -moz-box-flex: 0;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-full-lg-down {
+        -moz-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-12-lg-down{
+         -moz-box-flex: 0;
+        flex: 0 0 12%;
+        max-width: 12%;
+    }
+    .col-one-half-lg-down{
+         -moz-box-flex: 0;
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+    .mb-5-down{
+        margin-bottom: 3.6rem !important;
+    }
+}
+@media(max-width:992px) {
+    .mb-5-down {
+        margin-bottom: 3.6rem !important;
+    }
+}
+
+
+

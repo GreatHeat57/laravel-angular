@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Price Compare System for vacation</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        /* Animations  */
+     
+        .fade-in-up,
+        .section-heading,.angly-base-container {
+            animation-duration: 2s;
+            animation-name: fadeUp;
+        }
+        
+        @-webkit-keyframes fadeLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(50px);
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+            }
+        }
+        
+        @keyframes fadeLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(50px);
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+            }
+        }
+        
+        @-webkit-keyframes fadeUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+        }
+        
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+        }
+        
+        @-webkit-keyframes jumpUp {
+            0% {
+                -webkit-transform: scale(0.5) translate(70px, 70px);
+                transform: scale(0.5) translate(70px, 70px);
+            }
+            80% {
+                -webkit-transform: scale(1.1) translate(-10px, -10px);
+                transform: scale(1.1) translate(-10px, -10px);
+            }
+            100% {
+                -webkit-transform: scale(1) translate(0px);
+                transform: scale(1) translate(0px);
+            }
+        }
+        
+        @keyframes jumpUp {
+            0% {
+                -webkit-transform: scale(0.5) translate(70px, 70px);
+                transform: scale(0.5) translate(70px, 70px);
+            }
+            80% {
+                -webkit-transform: scale(1.1) translate(-10px, -10px);
+                transform: scale(1.1) translate(-10px, -10px);
+            }
+            100% {
+                -webkit-transform: scale(1) translate(0px);
+                transform: scale(1) translate(0px);
+            }
+        }
+    </style>
+   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+   <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <app-root>
+        <div class="block">
+            <div class="loading">
+                <span class="ball1"></span>
+                <span class="ball2"></span>
+            </div>
+        </div>
+    </app-root>
+    <script>
+        if (global === undefined) {
+            var global = window;
+        }
+    </script>
+</body>
+
+</html>

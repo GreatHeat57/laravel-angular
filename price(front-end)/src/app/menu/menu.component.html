@@ -1,0 +1,30 @@
+<!--  Top menu -->
+<nav id="mainNav" class="navbar navbar-expand-md navbar-dark fixed-top bg-primary {{router?.url == '/home' ? '' : 'bg-primary'}}">
+	<div class="container">
+		<a class="navbar-brand" [routerLink]="['/', 'home']" routerLinkActive="active-link">
+			<img src="assets/img/logo-text-white-800.png" class="img-fluid">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul menuToggleDirective id="main" class="navbar-nav ml-auto main-menu list-unstyled">
+				<li menuToggleLink class="nav-item" routerLinkActive="open" *ngFor="let menuItem of menuItems.getMainMenu()">
+					<a menuToggle class="nav-link" [routerLink]="['/', menuItem.state]" routerLinkActive="active-link" *ngIf="menuItem.type == 'link'" (click)="removeCollapseInClass()">
+						{{ menuItem?.name }}
+					</a>
+					<a menuToggle *ngIf="menuItem.type == 'sub'" class="nav-link" href="javascript:void(0)">{{ menuItem?.name }}&nbsp;
+						<i class="{{ menuItem?.icon }}"></i>
+					</a>
+					<ul *ngIf="menuItem.type == 'sub' && menuItem?.children" class="sub-menu arrow-up list-unstyled" >
+						<li class="nav-item" routerLinkActive="open" *ngFor="let grandchildItem of menuItem?.children">
+							<a class="nav-link" [routerLink]="['/', grandchildItem.state]" routerLinkActive="active-link" *ngIf="grandchildItem.type == 'link'" (click)="removeCollapseInClass()">
+								{{ grandchildItem?.name }}
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
